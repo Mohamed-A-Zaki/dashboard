@@ -1,0 +1,42 @@
+@use "../../sass/variable" as *;
+
+.search-bar {
+  .search {
+    width: 250px;
+    @media (max-width: 767px) {
+      width: 150px;
+    }
+    input {
+      padding-inline-start: 2rem;
+      transition: $main-transition;
+      &::placeholder {
+        transition: $main-transition;
+      }
+      &:focus {
+        @media (min-width: 768px) {
+          width: 300px;
+        }
+        &::placeholder {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  span {
+    cursor: pointer;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #f00;
+      top: 0;
+      right: 0;
+    }
+  }
+  img {
+    width: 30px;
+    cursor: pointer;
+  }
+}

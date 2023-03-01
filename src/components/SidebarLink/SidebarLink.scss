@@ -1,5 +1,7 @@
+@use "../../sass/variable" as *;
+
 .sidebar-link {
-  transition: 0.5s;
+  transition: $main-transition;
   &.active,
   &:hover {
     background-color: #f3f3f3;
