@@ -22,7 +22,7 @@ const Searchbar = () => {
         <span className="position-relative mx-2">
           <IoMdNotifications className="fs-4" />
         </span>
-        <Image src={avatar} />
+        <Image src={avatar} alt="avatar" />
       </div>
     </section>
   );
