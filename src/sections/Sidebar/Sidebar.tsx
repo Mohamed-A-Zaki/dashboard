@@ -65,7 +65,7 @@ const data = [
 
 const Sidebar = () => {
   return (
-    <div className="side-bar shadow vh-100 p-3 bg-white position-relative">
+    <section className="side-bar shadow vh-100 p-3 bg-white position-relative">
       <h1 className="h4 text-center position-relative pb-3 mb-0 mb-md-4">
         Elzero
       </h1>
@@ -74,7 +74,7 @@ const Sidebar = () => {
           return <SidebarLink key={item.id} {...item} />;
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

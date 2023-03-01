@@ -1,4 +1,5 @@
 import "./App.scss";
+import { Suspense } from "react";
 import { Outlet } from "react-router-dom";
 
 import Sidebar from "./sections/Sidebar/Sidebar";
@@ -10,7 +11,11 @@ function App() {
       <Sidebar />
       <main className="flex-grow-1">
         <Searchbar />
-        <Outlet />
+        <Suspense fallback="loading...">
+          <div className="p-3">
+            <Outlet />
+          </div>
+        </Suspense>
       </main>
     </div>
   );
