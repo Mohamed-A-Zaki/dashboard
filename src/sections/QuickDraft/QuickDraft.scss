@@ -1,0 +1,16 @@
+@use "../../sass/variable" as *;
+
+.quick-draft {
+  form {
+    textarea {
+      height: 150px;
+    }
+    button {
+      margin-inline-start: auto !important;
+      background-color: $blue-color;
+      &:hover {
+        background-color: $blue-alt-color;
+      }
+    }
+  }
+}

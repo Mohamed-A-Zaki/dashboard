@@ -1,0 +1,19 @@
+.main-heading {
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    inset-inline-start: 0;
+    bottom: 0;
+  }
+  &::after {
+    width: 125px;
+    background-color: #fff;
+  }
+  &::before {
+    width: 50px;
+    background-color: #000;
+    z-index: 2;
+  }
+}

@@ -9,10 +9,10 @@ function App() {
   return (
     <div className="App d-flex">
       <Sidebar />
-      <main className="flex-grow-1">
+      <main className="flex-grow-1 d-flex flex-column vh-100">
         <Searchbar />
         <Suspense fallback="loading...">
-          <div className="p-3">
+          <div className="p-3 h-100 overflow-auto">
             <Outlet />
           </div>
         </Suspense>

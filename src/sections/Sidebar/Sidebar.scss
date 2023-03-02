@@ -2,10 +2,13 @@
 
 .side-bar {
   width: 250px;
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     width: fit-content;
   }
-  h1 {
+  .title {
+    @media (max-width: 767px) {
+      font-size: 1rem !important;
+    }
     &::after,
     &::before {
       content: "";

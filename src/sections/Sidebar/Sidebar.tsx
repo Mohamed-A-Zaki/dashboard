@@ -66,7 +66,7 @@ const data = [
 const Sidebar = () => {
   return (
     <section className="side-bar shadow vh-100 p-3 bg-white position-relative">
-      <h1 className="h4 text-center position-relative pb-3 mb-0 mb-md-4">
+      <h1 className="title h5 fw-bold text-center position-relative pb-3 mb-0 mb-md-4">
         Elzero
       </h1>
       <div className="links">
