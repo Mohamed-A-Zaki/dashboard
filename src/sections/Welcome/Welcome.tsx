@@ -29,15 +29,15 @@ const Welcome = () => {
       <div className="info d-flex justify-content-around py-4 my-4 border-top border-bottom text-center">
         <div>
           Osama Elzero
-          <span className="text-muted d-block mt-2">Developer</span>
+          <span className="text-black-50 d-block mt-2">Developer</span>
         </div>
         <div>
           80
-          <span className="text-muted d-block mt-2">Projects</span>
+          <span className="text-black-50 d-block mt-2">Projects</span>
         </div>
         <div>
           $8500
-          <span className="text-muted d-block mt-2">Earned</span>
+          <span className="text-black-50 d-block mt-2">Earned</span>
         </div>
       </div>
 

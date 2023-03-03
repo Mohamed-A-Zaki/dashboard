@@ -14,7 +14,7 @@ const Ticket = ({ type, count, Icon }: Props) => {
     >
       <Icon className="fs-3" />
       <div className="count my-2 fw-bold fs-3">{count}</div>
-      <div className="type text-muted">{type}</div>
+      <div className="type text-black-50">{type}</div>
     </div>
   );
 };

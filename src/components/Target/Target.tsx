@@ -16,7 +16,7 @@ const Target = ({ title, count, persentage, Icon }: Props) => {
         <Icon />
       </div>
       <div className="details flex-grow-1 position-relative">
-        <div className="title text-muted">{title}</div>
+        <div className="title text-black-50">{title}</div>
         <div className="count fw-bold my-2">{count}</div>
         <ProgressBar now={persentage} className="position-relative" />
         <Badge
