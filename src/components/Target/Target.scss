@@ -1,0 +1,74 @@
+@use "../../sass/variable" as *;
+
+.target {
+  .progress {
+    height: 5px;
+  }
+  .persentage {
+    bottom: 20px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 7px;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      clip-path: polygon(0 0, 50% 100%, 100% 0);
+    }
+  }
+  &.money {
+    .icon {
+      background-color: rgba($blue-color, 0.2);
+      color: $blue-color;
+    }
+    .progress {
+      background-color: rgba($blue-color, 0.2);
+      .progress-bar {
+        background-color: $blue-color;
+      }
+    }
+    .persentage {
+      background-color: $blue-color !important;
+      &::after {
+        background-color: $blue-color;
+      }
+    }
+  }
+  &.projects {
+    .icon {
+      background-color: rgba($orange-color, 0.2);
+      color: $orange-color;
+    }
+    .progress {
+      background-color: rgba($orange-color, 0.2);
+      .progress-bar {
+        background-color: $orange-color;
+      }
+    }
+    .persentage {
+      background-color: $orange-color !important;
+      &::after {
+        background-color: $orange-color;
+      }
+    }
+  }
+  &.team {
+    .icon {
+      background-color: rgba($green-color, 0.2);
+      color: $green-color;
+    }
+    .progress {
+      background-color: rgba($green-color, 0.2);
+      .progress-bar {
+        background-color: $green-color;
+      }
+    }
+    .persentage {
+      background-color: $green-color !important;
+      &::after {
+        background-color: $green-color;
+      }
+    }
+  }
+}

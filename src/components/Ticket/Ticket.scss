@@ -1,0 +1,24 @@
+@use "../../sass/variable" as *;
+
+.ticket {
+  &.total {
+    svg {
+      color: $orange-color;
+    }
+  }
+  &.pending {
+    svg {
+      color: $blue-color;
+    }
+  }
+  &.closed {
+    svg {
+      color: $green-color;
+    }
+  }
+  &.deleted {
+    svg {
+      color: $red-color;
+    }
+  }
+}
