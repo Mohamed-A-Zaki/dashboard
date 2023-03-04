@@ -12,7 +12,7 @@ function App() {
       <main className="flex-grow-1 d-flex flex-column vh-100">
         <Searchbar />
         <Suspense fallback="loading...">
-          <div className="p-3 h-100 overflow-auto">
+          <div className="p-3 overflow-auto">
             <Outlet />
           </div>
         </Suspense>

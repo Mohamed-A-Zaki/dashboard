@@ -2,6 +2,9 @@
 
 .side-bar {
   width: 250px;
+  &.vh-100 {
+    border-radius: 0 !important;
+  }
   @media (max-width: 767px) {
     width: fit-content;
   }

@@ -21,6 +21,23 @@ import {
 } from "react-icons/bs";
 
 const data = {
+  welcome_info: [
+    {
+      id: 1,
+      value: "Osama Elzero",
+      label: "Developer",
+    },
+    {
+      id: 2,
+      value: "80",
+      label: "Projects",
+    },
+    {
+      id: 3,
+      value: "$8500",
+      label: "Earned",
+    },
+  ],
   pages: [
     {
       id: 1,
@@ -118,6 +135,36 @@ const data = {
       type: "Deleted",
       count: 100,
       Icon: CgCloseR,
+    },
+  ],
+  news: [
+    {
+      id: 1,
+      title: "Created SASS Section",
+      description: "New SASS Examples & Tutorials",
+      date: "3 Days Ago",
+      img: "/assets/news-01.png",
+    },
+    {
+      id: 2,
+      title: "Changed The Design",
+      description: "A Brand New Website Design",
+      date: "5 Days Ago",
+      img: "/assets/news-02.png",
+    },
+    {
+      id: 3,
+      title: "Team Increased",
+      description: "3 Developers Joined The Team",
+      date: "7 Days Ago",
+      img: "/assets/news-03.png",
+    },
+    {
+      id: 4,
+      title: "Added Payment Gateway",
+      description: "Many New Payment Gateways Added",
+      date: "9 Days Ago",
+      img: "/assets/news-04.png",
     },
   ],
 };

@@ -21,7 +21,7 @@ const Target = ({ title, count, persentage, Icon }: Props) => {
         <ProgressBar now={persentage} className="position-relative" />
         <Badge
           className="persentage position-absolute translate-middle-x"
-          style={{ left: `${persentage}%` }}
+          style={{ insetInlineStart: `${persentage}%` }}
         >
           {persentage}%
         </Badge>

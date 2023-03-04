@@ -5,6 +5,7 @@ import Welcome from "../sections/Welcome/Welcome";
 import QuickDraft from "../sections/QuickDraft/QuickDraft";
 import Mainheading from "../components/Mainheading/Mainheading";
 import YearlyTargets from "./../sections/YearlyTargets/YearlyTargets";
+import LatestNews from "./../sections/LatestNews/LatestNews";
 
 const Dashboard = () => {
   const sections = [
@@ -12,11 +13,13 @@ const Dashboard = () => {
     { id: 2, Section: QuickDraft },
     { id: 3, Section: YearlyTargets },
     { id: 4, Section: Tickets },
+    { id: 5, Section: LatestNews },
   ];
 
   return (
     <div className="dashboard-page">
       <Mainheading>Dashboard</Mainheading>
+
       <Row xs={1} xl={2} className="g-3">
         {sections.map(({ id, Section }) => (
           <Col key={id}>{<Section />}</Col>

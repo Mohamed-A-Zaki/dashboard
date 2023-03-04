@@ -6,6 +6,9 @@
   }
   .persentage {
     bottom: 20px;
+    [dir="rtl"] & {
+      transform: translateX(50%) !important;
+    }
     &::after {
       content: "";
       position: absolute;
