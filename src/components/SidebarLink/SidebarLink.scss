@@ -4,7 +4,7 @@
   transition: $main-transition;
   &.active,
   &:hover {
-    background-color: #f3f3f3;
+    background-color: $light-color;
   }
   svg {
     width: 20px;

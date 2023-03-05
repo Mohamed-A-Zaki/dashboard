@@ -24,6 +24,13 @@ import new_2_img from "../assets/news-02.png";
 import new_3_img from "../assets/news-03.png";
 import new_4_img from "../assets/news-04.png";
 
+import file_1 from "../assets/pdf.svg";
+import file_2 from "../assets/avi.svg";
+import file_3 from "../assets/psd.svg";
+import file_4 from "../assets/zip.svg";
+import file_5 from "../assets/dll.svg";
+import file_6 from "../assets/eps.svg";
+
 const data = {
   welcome_info: [
     {
@@ -169,6 +176,114 @@ const data = {
       description: "Many New Payment Gateways Added",
       date: "9 Days Ago",
       img: new_4_img,
+    },
+  ],
+  tasks: [
+    {
+      id: 1,
+      title: "Record One New Video",
+      desc: "Record Python Create Exe Project",
+      isDone: false,
+    },
+    {
+      id: 2,
+      title: "Write Article",
+      desc: "Write Low Level vs High Level Languages",
+      isDone: false,
+    },
+    {
+      id: 3,
+      title: "Finish Project",
+      desc: "Publish Academy Programming Project",
+      isDone: true,
+    },
+    {
+      id: 4,
+      title: "Attend The Meeting",
+      desc: "Attend The Project Business Analysis Meeting",
+      isDone: false,
+    },
+    {
+      id: 5,
+      title: "Finish Lesson",
+      desc: "Finish Teaching Flex Box",
+      isDone: false,
+    },
+  ],
+  search: [
+    {
+      id: 1,
+      keyword: "Programming",
+      count: 220,
+    },
+    {
+      id: 2,
+      keyword: "JavaScript",
+      count: 180,
+    },
+    {
+      id: 3,
+      keyword: "PHP",
+      count: 160,
+    },
+    {
+      id: 4,
+      keyword: "Code",
+      count: 145,
+    },
+    {
+      id: 5,
+      keyword: "Design",
+      count: 110,
+    },
+    {
+      id: 6,
+      keyword: "Logic",
+      count: 195,
+    },
+  ],
+  upload_files: [
+    {
+      id: 1,
+      file_name: "my-file.pdf",
+      person: "Elzero",
+      size: "2.9mb",
+      img: file_1,
+    },
+    {
+      id: 2,
+      file_name: "My-Video-File.avi",
+      person: "Admin",
+      size: "4.9mb",
+      img: file_2,
+    },
+    {
+      id: 3,
+      file_name: "My-Psd-File.pdf",
+      person: "Osama",
+      size: "4.5mb",
+      img: file_3,
+    },
+    {
+      id: 4,
+      file_name: "My-Zip-File.pdf",
+      person: "User",
+      size: "8.9mb",
+      img: file_4,
+    },
+    {
+      id: 5,
+      file_name: "My-DLL-File.pdf",
+      person: "Admin",
+      size: "4.9mb",
+      img: file_5,
+    },
+    {
+      id: 6,
+      file_name: "My-Eps-File.pdf",
+      person: "Designer",
+      size: "8.9mb",
+      img: file_6,
     },
   ],
 };

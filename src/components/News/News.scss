@@ -1,3 +1,5 @@
+@use "../../sass/variable" as *;
+
 .news {
   &:not(:last-child) {
     border-bottom: 1px solid #ddd;
@@ -11,9 +13,8 @@
     width: 100px;
   }
   .date {
-    background-color: #f3f3f3;
+    background-color: $light-color;
     @media (min-width: 768px) {
-      margin-inline-end: 0;
       margin-inline-start: auto;
     }
   }

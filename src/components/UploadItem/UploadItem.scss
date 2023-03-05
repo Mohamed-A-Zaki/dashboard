@@ -1,0 +1,14 @@
+@use "../../sass/variable" as *;
+
+.upload-item {
+  &:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+  }
+  img {
+    width: 40px;
+  }
+  .size {
+    background-color: $light-color;
+    margin-inline-start: auto;
+  }
+}
