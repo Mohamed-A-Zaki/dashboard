@@ -1,8 +1,7 @@
-import { CgProfile } from "react-icons/cg";
+import { CgProfile, CgCloseR } from "react-icons/cg";
 import { IoMdSettings } from "react-icons/io";
 import { AiFillFilePdf } from "react-icons/ai";
 import { BiLoaderCircle } from "react-icons/bi";
-import { CgCloseR } from "react-icons/cg";
 
 import {
   FaChartBar,
@@ -19,6 +18,11 @@ import {
   BsFillPersonFill,
   BsCurrencyDollar,
 } from "react-icons/bs";
+
+import new_1_img from "../assets/news-01.png";
+import new_2_img from "../assets/news-02.png";
+import new_3_img from "../assets/news-03.png";
+import new_4_img from "../assets/news-04.png";
 
 const data = {
   welcome_info: [
@@ -143,28 +147,28 @@ const data = {
       title: "Created SASS Section",
       description: "New SASS Examples & Tutorials",
       date: "3 Days Ago",
-      img: "/assets/news-01.png",
+      img: new_1_img,
     },
     {
       id: 2,
       title: "Changed The Design",
       description: "A Brand New Website Design",
       date: "5 Days Ago",
-      img: "/assets/news-02.png",
+      img: new_2_img,
     },
     {
       id: 3,
       title: "Team Increased",
       description: "3 Developers Joined The Team",
       date: "7 Days Ago",
-      img: "/assets/news-03.png",
+      img: new_3_img,
     },
     {
       id: 4,
       title: "Added Payment Gateway",
       description: "Many New Payment Gateways Added",
       date: "9 Days Ago",
-      img: "/assets/news-04.png",
+      img: new_4_img,
     },
   ],
 };
