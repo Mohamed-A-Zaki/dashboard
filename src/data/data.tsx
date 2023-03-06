@@ -286,6 +286,33 @@ const data = {
       img: file_6,
     },
   ],
+  steps: [
+    {
+      id: 1,
+      step: "Got The Project",
+      status: "done",
+    },
+    {
+      id: 2,
+      step: "Started The Project",
+      status: "done",
+    },
+    {
+      id: 3,
+      step: "The Project About To Finish",
+      status: "done",
+    },
+    {
+      id: 4,
+      step: "Test The Project",
+      status: "active",
+    },
+    {
+      id: 5,
+      step: "Finish The Project & Get Money",
+      status: "",
+    },
+  ],
 };
 
 export default data;

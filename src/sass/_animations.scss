@@ -1,0 +1,10 @@
+@use "./variable" as *;
+
+@keyframes change-bg {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: $blue-color;
+  }
+}

@@ -9,17 +9,19 @@ import LatestNews from "./../sections/LatestNews/LatestNews";
 import LatestTasks from "../sections/LatestTasks/LatestTasks";
 import TopSearchItems from "../sections/TopSearchItems/TopSearchItems";
 import LatestUploads from "../sections/LatestUploads/LatestUploads";
+import LastProject from "../sections/LastProject/LastProject";
 
 const Dashboard = () => {
   const sections = [
-    { id: 1, Section: Welcome },
-    { id: 2, Section: QuickDraft },
-    { id: 3, Section: YearlyTargets },
-    { id: 4, Section: Tickets },
-    { id: 5, Section: LatestNews },
-    { id: 6, Section: LatestTasks },
-    { id: 7, Section: TopSearchItems },
-    { id: 8, Section: LatestUploads },
+    // { id: 1, Section: Welcome },
+    // { id: 2, Section: QuickDraft },
+    // { id: 3, Section: YearlyTargets },
+    // { id: 4, Section: Tickets },
+    // { id: 5, Section: LatestNews },
+    // { id: 6, Section: LatestTasks },
+    // { id: 7, Section: TopSearchItems },
+    // { id: 8, Section: LatestUploads },
+    { id: 9, Section: LastProject },
   ];
 
   return (
