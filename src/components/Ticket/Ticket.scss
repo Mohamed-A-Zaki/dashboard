@@ -1,24 +1,22 @@
 @use "../../sass/variable" as *;
 
+@mixin type_style($color) {
+  svg {
+    color: $color;
+  }
+}
+
 .ticket {
   &.total {
-    svg {
-      color: $orange-color;
-    }
+    @include type_style($orange-color);
   }
   &.pending {
-    svg {
-      color: $blue-color;
-    }
+    @include type_style($blue-color);
   }
   &.closed {
-    svg {
-      color: $green-color;
-    }
+    @include type_style($green-color);
   }
   &.deleted {
-    svg {
-      color: $red-color;
-    }
+    @include type_style($red-color);
   }
 }

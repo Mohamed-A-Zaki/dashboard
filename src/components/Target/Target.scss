@@ -1,5 +1,24 @@
 @use "../../sass/variable" as *;
 
+@mixin type_style($color) {
+  .icon {
+    background-color: rgba($color, 0.2);
+    color: $color;
+  }
+  .progress {
+    background-color: rgba($color, 0.2);
+    .progress-bar {
+      background-color: $color;
+    }
+  }
+  .persentage {
+    background-color: $color !important;
+    &::after {
+      background-color: $color;
+    }
+  }
+}
+
 .target {
   .progress {
     height: 5px;
@@ -21,57 +40,12 @@
     }
   }
   &.money {
-    .icon {
-      background-color: rgba($blue-color, 0.2);
-      color: $blue-color;
-    }
-    .progress {
-      background-color: rgba($blue-color, 0.2);
-      .progress-bar {
-        background-color: $blue-color;
-      }
-    }
-    .persentage {
-      background-color: $blue-color !important;
-      &::after {
-        background-color: $blue-color;
-      }
-    }
+    @include type_style($blue-color);
   }
   &.projects {
-    .icon {
-      background-color: rgba($orange-color, 0.2);
-      color: $orange-color;
-    }
-    .progress {
-      background-color: rgba($orange-color, 0.2);
-      .progress-bar {
-        background-color: $orange-color;
-      }
-    }
-    .persentage {
-      background-color: $orange-color !important;
-      &::after {
-        background-color: $orange-color;
-      }
-    }
+    @include type_style($orange-color);
   }
   &.team {
-    .icon {
-      background-color: rgba($green-color, 0.2);
-      color: $green-color;
-    }
-    .progress {
-      background-color: rgba($green-color, 0.2);
-      .progress-bar {
-        background-color: $green-color;
-      }
-    }
-    .persentage {
-      background-color: $green-color !important;
-      &::after {
-        background-color: $green-color;
-      }
-    }
+    @include type_style($green-color);
   }
 }

@@ -1,3 +1,14 @@
+@mixin brand_color($color) {
+  background-color: rgba($color, 0.2);
+  .text {
+    color: $color;
+  }
+  .icon,
+  a {
+    background-color: $color;
+  }
+}
+
 .social-item {
   .icon {
     width: 60px;
@@ -12,47 +23,15 @@
     margin-inline-end: 1rem;
   }
   &.twitter {
-    $twitter-color: #1da1f2;
-    background-color: rgba($twitter-color, 0.2);
-    .text {
-      color: $twitter-color;
-    }
-    .icon,
-    a {
-      background-color: $twitter-color;
-    }
+    @include brand_color(#1da1f2);
   }
   &.facebook {
-    $facebook-color: #1877f2;
-    background-color: rgba($facebook-color, 0.2);
-    .text {
-      color: $facebook-color;
-    }
-    .icon,
-    a {
-      background-color: $facebook-color;
-    }
+    @include brand_color(#1877f2);
   }
   &.youtube {
-    $youtube-color: #ff0000;
-    background-color: rgba($youtube-color, 0.2);
-    .text {
-      color: $youtube-color;
-    }
-    .icon,
-    a {
-      background-color: $youtube-color;
-    }
+    @include brand_color(#ff0000);
   }
   &.linkedin {
-    $linkedin-color: #0a66c2;
-    background-color: rgba($linkedin-color, 0.2);
-    .text {
-      color: $linkedin-color;
-    }
-    .icon,
-    a {
-      background-color: $linkedin-color;
-    }
+    @include brand_color(#0a66c2);
   }
 }
