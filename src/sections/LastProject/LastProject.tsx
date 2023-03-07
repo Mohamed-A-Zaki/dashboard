@@ -21,7 +21,7 @@ const LastProject = () => {
 
       <img
         src={image}
-        className="position-absolute bottom-0 opacity-25"
+        className="position-absolute bottom-0"
         alt="project image"
         style={{ width: 150, insetInlineEnd: 0 }}
       />
