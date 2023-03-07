@@ -1,4 +1,4 @@
-@use "../../sass/variable" as *;
+@use "../../sass/variables" as *;
 
 @mixin type_style($color) {
   &::after,
