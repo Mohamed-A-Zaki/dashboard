@@ -1,0 +1,47 @@
+@use "../../sass/variable" as *;
+
+.reminder-item {
+  padding-inline-start: 3rem;
+  &:after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::after {
+    width: 18px;
+    height: 18px;
+    inset-inline-start: 0;
+    border-radius: 50%;
+  }
+  &::before {
+    height: 80%;
+    width: 2px;
+    inset-inline-start: 2rem;
+  }
+  &.red {
+    &::after,
+    &::before {
+      background-color: $red-color;
+    }
+  }
+  &.blue {
+    &::after,
+    &::before {
+      background-color: $blue-color;
+    }
+  }
+  &.green {
+    &::after,
+    &::before {
+      background-color: $green-color;
+    }
+  }
+  &.orange {
+    &::after,
+    &::before {
+      background-color: $orange-color;
+    }
+  }
+}

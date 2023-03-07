@@ -1,0 +1,58 @@
+.social-item {
+  .icon {
+    width: 60px;
+    height: 60px;
+    border-start-start-radius: 0.375rem;
+    border-end-start-radius: 0.375rem;
+  }
+  a {
+    font-size: 13px;
+    width: 80px;
+    margin-inline-start: auto;
+    margin-inline-end: 1rem;
+  }
+  &.twitter {
+    $twitter-color: #1da1f2;
+    background-color: rgba($twitter-color, 0.2);
+    .text {
+      color: $twitter-color;
+    }
+    .icon,
+    a {
+      background-color: $twitter-color;
+    }
+  }
+  &.facebook {
+    $facebook-color: #1877f2;
+    background-color: rgba($facebook-color, 0.2);
+    .text {
+      color: $facebook-color;
+    }
+    .icon,
+    a {
+      background-color: $facebook-color;
+    }
+  }
+  &.youtube {
+    $youtube-color: #ff0000;
+    background-color: rgba($youtube-color, 0.2);
+    .text {
+      color: $youtube-color;
+    }
+    .icon,
+    a {
+      background-color: $youtube-color;
+    }
+  }
+  &.linkedin {
+    $linkedin-color: #0a66c2;
+    background-color: rgba($linkedin-color, 0.2);
+    .text {
+      color: $linkedin-color;
+    }
+    .icon,
+    a {
+      background-color: $linkedin-color;
+    }
+  }
+}

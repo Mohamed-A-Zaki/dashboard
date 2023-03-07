@@ -9,6 +9,10 @@ import {
   FaAddressCard,
   FaGraduationCap,
   FaProjectDiagram,
+  FaTwitter,
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
 } from "react-icons/fa";
 
 import {
@@ -311,6 +315,62 @@ const data = {
       id: 5,
       step: "Finish The Project & Get Money",
       status: "",
+    },
+  ],
+  reminders: [
+    {
+      id: 1,
+      title: "Check My Tasks List",
+      time: "28/09/2022 - 12:00am",
+      color: "blue",
+    },
+    {
+      id: 2,
+      title: "Check My Projects",
+      time: "26/10/2022 - 12:00am",
+      color: "green",
+    },
+    {
+      id: 3,
+      title: "Call All My Clients",
+      time: "05/11/2022 - 12:00am",
+      color: "orange",
+    },
+    {
+      id: 4,
+      title: "Finish The Development Workshop",
+      time: "20/12/2022 - 12:00am",
+      color: "red",
+    },
+  ],
+  social_media: [
+    {
+      id: 1,
+      text: "90K Followers",
+      label: "Follow",
+      type: "twitter",
+      Icon: FaTwitter,
+    },
+    {
+      id: 2,
+      text: "2M Like",
+      label: "Like",
+      type: "facebook",
+      Icon: FaFacebookF,
+    },
+    {
+      id: 3,
+      text: "1M Subs",
+      label: "Subscribe",
+      type: "youtube",
+      Icon: FaYoutube,
+    },
+    {
+      id: 4,
+      text: "70K Followers",
+      label: "Follow",
+      type: "linkedin",
+      Icon: FaLinkedinIn,
     },
   ],
 };

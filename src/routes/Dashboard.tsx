@@ -10,6 +10,9 @@ import LatestTasks from "../sections/LatestTasks/LatestTasks";
 import TopSearchItems from "../sections/TopSearchItems/TopSearchItems";
 import LatestUploads from "../sections/LatestUploads/LatestUploads";
 import LastProject from "../sections/LastProject/LastProject";
+import Reminders from "../sections/Reminders/Reminders";
+import LastPost from "../sections/LastPost/LastPost";
+import SocialMedia from "../sections/SocialMedia/SocialMedia";
 
 const Dashboard = () => {
   const sections = [
@@ -22,6 +25,9 @@ const Dashboard = () => {
     { id: 7, Section: TopSearchItems },
     { id: 8, Section: LatestUploads },
     { id: 9, Section: LastProject },
+    { id: 10, Section: Reminders },
+    { id: 11, Section: LastPost },
+    { id: 12, Section: SocialMedia },
   ];
 
   return (
