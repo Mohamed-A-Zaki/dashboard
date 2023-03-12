@@ -10,7 +10,7 @@
   }
   svg {
     cursor: pointer;
-    transition: 0.3s;
+    transition: $main-transition;
     &:hover {
       color: $red-color;
     }

@@ -14,11 +14,6 @@
     }
   }
   a {
-    width: fit-content;
-    margin-inline-start: auto !important;
-    background-color: $blue-color;
-    &:hover {
-      background-color: $blue-alt-color;
-    }
+    margin-inline-end: 1rem;
   }
 }

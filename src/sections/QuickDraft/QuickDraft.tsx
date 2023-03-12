@@ -1,4 +1,3 @@
-import "./QuickDraft.scss";
 import { Button, Form } from "react-bootstrap";
 
 import Section from "../../components/Section/Section";
@@ -13,7 +12,7 @@ const QuickDraft = () => {
         <SectionTitle>Quick Draft</SectionTitle>
         <SectionSubTitle>Write A Draft For Your Ideas</SectionSubTitle>
       </SectionHeading>
-      
+
       <Form>
         <Form.Group className="mb-3">
           <Form.Control
@@ -29,9 +28,10 @@ const QuickDraft = () => {
             placeholder="Your Message"
             aria-label="your message"
             className="shadow-none"
+            style={{ height: 150 }}
           />
         </Form.Group>
-        <Button type="submit" variant="" className="d-block text-white">
+        <Button type="submit" variant="" className="main_btn d-block">
           Save
         </Button>
       </Form>

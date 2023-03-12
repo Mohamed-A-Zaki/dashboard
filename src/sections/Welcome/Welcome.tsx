@@ -36,7 +36,10 @@ const Welcome = () => {
         ))}
       </div>
 
-      <Link to="/profile" className="btn m-3 d-block text-white">
+      <Link
+        to="/profile"
+        className="main_btn text-decoration-none my-3 d-block"
+      >
         Profile
       </Link>
     </Section>

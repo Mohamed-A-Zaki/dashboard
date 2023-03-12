@@ -28,6 +28,12 @@ import new_2_img from "../assets/news-02.png";
 import new_3_img from "../assets/news-03.png";
 import new_4_img from "../assets/news-04.png";
 
+import team_1 from "../assets/team-01.png";
+import team_2 from "../assets/team-02.png";
+import team_3 from "../assets/team-03.png";
+import team_4 from "../assets/team-04.png";
+import team_5 from "../assets/team-05.png";
+
 import file_1 from "../assets/pdf.svg";
 import file_2 from "../assets/avi.svg";
 import file_3 from "../assets/psd.svg";
@@ -371,6 +377,62 @@ const data = {
       label: "Follow",
       type: "linkedin",
       Icon: FaLinkedinIn,
+    },
+  ],
+  projects: [
+    {
+      id: 1,
+      name: "Ministry Wikipedia",
+      finish_date: "10 May 2022",
+      client: "Ministry",
+      price: "$5300",
+      team: [team_1, team_2, team_3],
+      status: "Pending",
+    },
+    {
+      id: 2,
+      name: "Elzero Shop",
+      finish_date: "12 Oct 2021",
+      client: "Elzero Company",
+      price: "$1500",
+      team: [team_1, team_2, team_5],
+      status: "In Progress",
+    },
+    {
+      id: 3,
+      name: "Bouba App",
+      finish_date: "05 Sep 2021",
+      client: "Bouba",
+      price: "$800",
+      team: [team_4, team_5],
+      status: "Completed",
+    },
+    {
+      id: 4,
+      name: "Mahmoud Website",
+      finish_date: "22 May 2021",
+      client: "Mahmoud",
+      price: "$600",
+      team: [team_1, team_3, team_4, team_5],
+      status: "Completed",
+    },
+    {
+      id: 5,
+      name: "Sayed Website",
+      finish_date: "24 May 2021",
+      client: "Sayed",
+      price: "$300",
+      team: [team_3, team_4],
+      status: "Pending",
+    },
+    {
+      id: 6,
+      name: "Arena Application",
+      finish_date: "01 Mar 2021",
+      client: "Arena Company",
+      price: "$2600",
+      team: [team_1, team_2, team_5],
+      status: "Completed",
     },
   ],
 };

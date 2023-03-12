@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App d-flex">
       <Sidebar />
-      <main className="flex-grow-1 d-flex flex-column vh-100">
+      <main className="flex-grow-1 d-flex flex-column vh-100 overflow-hidden">
         <Searchbar />
         <Suspense fallback="loading...">
           <div className="p-3 overflow-auto">

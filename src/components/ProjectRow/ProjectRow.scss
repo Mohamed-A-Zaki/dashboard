@@ -1,0 +1,33 @@
+@use "../../sass/variables" as *;
+
+@mixin type_color($color) {
+  background-color: $color;
+}
+
+.project-row {
+  td {
+    transition: $main-transition;
+  }
+  img {
+    width: 2rem;
+    padding: 2px;
+    &:not(:first-child) {
+      margin-left: -15px;
+    }
+  }
+  .status {
+    width: 80px;
+    &.completed {
+      @include type_color($green-color);
+    }
+    &.in-progress {
+      @include type_color($blue-color);
+    }
+    &.rejected {
+      @include type_color($red-color);
+    }
+    &.pending {
+      @include type_color($orange-color);
+    }
+  }
+}

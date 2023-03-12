@@ -13,6 +13,7 @@ import LastProject from "../sections/LastProject/LastProject";
 import Reminders from "../sections/Reminders/Reminders";
 import LastPost from "../sections/LastPost/LastPost";
 import SocialMedia from "../sections/SocialMedia/SocialMedia";
+import ProjectsTable from "../sections/ProjectsTable/ProjectsTable";
 
 const Dashboard = () => {
   const sections = [
@@ -39,6 +40,8 @@ const Dashboard = () => {
           <Col key={id}>{<Section />}</Col>
         ))}
       </Row>
+
+      <ProjectsTable />
     </div>
   );
 };

@@ -18,7 +18,7 @@ const SocialMediaItem = ({ text, label, type, Icon }: Props) => {
       <div className="text">{text}</div>
       <Link
         to="#"
-        className="text-decoration-none text-white py-1 px-2 text-center rounded"
+        className="main_btn text-decoration-none"
       >
         {label}
       </Link>
