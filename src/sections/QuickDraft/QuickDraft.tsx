@@ -28,7 +28,6 @@ const QuickDraft = () => {
             placeholder="Your Message"
             aria-label="your message"
             className="shadow-none"
-            style={{ height: 150 }}
           />
         </Form.Group>
         <Button type="submit" variant="" className="main_btn d-block">

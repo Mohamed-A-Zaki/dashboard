@@ -1,22 +1,12 @@
 import "./App.scss";
-import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
-
+import Main from "./components/Main/Main";
 import Sidebar from "./sections/Sidebar/Sidebar";
-import Searchbar from "./sections/Searchbar/Searchbar";
 
 function App() {
   return (
     <div className="App d-flex">
       <Sidebar />
-      <main className="flex-grow-1 d-flex flex-column vh-100 overflow-hidden">
-        <Searchbar />
-        <Suspense fallback="loading...">
-          <div className="p-3 overflow-auto">
-            <Outlet />
-          </div>
-        </Suspense>
-      </main>
+      <Main />
     </div>
   );
 }

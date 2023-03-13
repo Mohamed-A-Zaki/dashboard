@@ -1,0 +1,20 @@
+@use "../../sass/variables" as *;
+
+.social-info {
+  form {
+    .input-group:focus-within {
+      .input-group-text {
+        opacity: 1 !important;
+      }
+    }
+    .input-group-text {
+      border-start-end-radius: 0 !important;
+      border-end-end-radius: 0 !important;
+      transition: $main-transition;
+    }
+    .form-control {
+      border-start-start-radius: 0 !important;
+      border-end-start-radius: 0 !important;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 
 .news {
   &:not(:last-child) {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $light-color;
   }
   .content {
     @media (min-width: 768px) {

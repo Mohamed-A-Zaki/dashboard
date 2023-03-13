@@ -1,0 +1,11 @@
+@use "../../sass/variables" as *;
+
+.general-info {
+  input:disabled {
+    cursor: no-drop;
+  }
+  .change {
+    color: $blue-color;
+    cursor: pointer;
+  }
+}

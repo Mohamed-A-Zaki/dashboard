@@ -1,11 +1,9 @@
-import { Col, Row } from "react-bootstrap";
-
 import Tickets from "../sections/Tickets/Tickets";
 import Welcome from "../sections/Welcome/Welcome";
 import QuickDraft from "../sections/QuickDraft/QuickDraft";
 import Mainheading from "../components/Mainheading/Mainheading";
-import YearlyTargets from "./../sections/YearlyTargets/YearlyTargets";
-import LatestNews from "./../sections/LatestNews/LatestNews";
+import YearlyTargets from "../sections/YearlyTargets/YearlyTargets";
+import LatestNews from "../sections/LatestNews/LatestNews";
 import LatestTasks from "../sections/LatestTasks/LatestTasks";
 import TopSearchItems from "../sections/TopSearchItems/TopSearchItems";
 import LatestUploads from "../sections/LatestUploads/LatestUploads";
@@ -14,6 +12,7 @@ import Reminders from "../sections/Reminders/Reminders";
 import LastPost from "../sections/LastPost/LastPost";
 import SocialMedia from "../sections/SocialMedia/SocialMedia";
 import ProjectsTable from "../sections/ProjectsTable/ProjectsTable";
+import Widgets from "../components/Widgets/Widgets";
 
 const Dashboard = () => {
   const sections = [
@@ -34,13 +33,7 @@ const Dashboard = () => {
   return (
     <div className="dashboard-page">
       <Mainheading>Dashboard</Mainheading>
-
-      <Row xs={1} xl={2} className="g-3">
-        {sections.map(({ id, Section }) => (
-          <Col key={id}>{<Section />}</Col>
-        ))}
-      </Row>
-
+      <Widgets sections={sections} />
       <ProjectsTable />
     </div>
   );
