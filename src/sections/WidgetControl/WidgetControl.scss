@@ -1,0 +1,51 @@
+@use "../../sass/variables" as *;
+
+.widget-control {
+  .form-check {
+    padding-inline-start: 1.5em;
+    .form-check-input {
+      box-shadow: none;
+      margin-inline-start: -1.5em;
+      [dir="rtl"] & {
+        float: right;
+      }
+      &:checked + .form-check-label::after {
+        background-color: $blue-color;
+        transform: scale(1) rotate(0);
+      }
+    }
+    .form-check-label {
+      padding-inline-start: .25rem;
+      position: relative;
+      cursor: pointer;
+      &::after,
+      &::before {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        top: 50%;
+        margin-top: -10px;
+        inset-inline-start: -24px;
+        transition: $main-transition;
+      }
+      &::after {
+        content: "+";
+        color: #fff;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(0) rotate(360deg);
+      }
+      &::before {
+        content: "";
+        background-color: #fff;
+        border: 2px solid $grey-color;
+      }
+      &:hover::before {
+        border-color: $blue-color;
+      }
+    }
+  }
+}

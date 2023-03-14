@@ -435,6 +435,38 @@ const data = {
       status: "Completed",
     },
   ],
+  widgets_list: [
+    {
+      id: 1,
+      name: "Quick Draft",
+      isActive: true,
+    },
+    {
+      id: 2,
+      name: "Yearly Targets",
+      isActive: true,
+    },
+    {
+      id: 3,
+      name: "Tickets Statistics",
+      isActive: true,
+    },
+    {
+      id: 4,
+      name: "Latest News",
+      isActive: true,
+    },
+    {
+      id: 5,
+      name: "Latest Tasks",
+      isActive: false,
+    },
+    {
+      id: 6,
+      name: "Top Search Items",
+      isActive: false,
+    },
+  ],
 };
 
 export default data;
