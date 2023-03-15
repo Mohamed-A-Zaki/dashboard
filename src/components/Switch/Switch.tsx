@@ -9,6 +9,7 @@ const Switch = () => {
     <Form.Check
       type="switch"
       className="fs-4"
+      aria-label="switch"
       checked={isChecked}
       onChange={(e) => setIsChecked(e.target.checked)}
     />
