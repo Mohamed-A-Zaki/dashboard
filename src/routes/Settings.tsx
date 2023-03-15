@@ -5,6 +5,7 @@ import SiteControl from "../sections/SiteControl/SiteControl";
 import SecurityInfo from "../sections/SecurityInfo/SecurityInfo";
 import SocialInfo from "../sections/SocialInfo/SocialInfo";
 import WidgetControl from "../sections/WidgetControl/WidgetControl";
+import BackupManager from "../sections/BackupManager/BackupManager";
 
 const Settings = () => {
   const sections = [
@@ -13,6 +14,7 @@ const Settings = () => {
     { id: 3, Section: SecurityInfo },
     { id: 4, Section: SocialInfo },
     { id: 5, Section: WidgetControl },
+    { id: 6, Section: BackupManager },
   ];
 
   return (

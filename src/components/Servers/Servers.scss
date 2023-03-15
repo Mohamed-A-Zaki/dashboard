@@ -1,0 +1,11 @@
+@use "../../sass/variables" as *;
+
+.servers {
+  .server {
+    cursor: pointer;
+    transition: $main-transition;
+    &.active {
+      border-color: $blue-color !important;
+    }
+  }
+}

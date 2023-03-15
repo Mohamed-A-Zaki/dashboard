@@ -467,6 +467,37 @@ const data = {
       isActive: false,
     },
   ],
+  plans: [
+    {
+      id: 1,
+      name: "Daily",
+      isActive: false,
+    },
+    {
+      id: 2,
+      name: "Weekly",
+      isActive: true,
+    },
+    {
+      id: 3,
+      name: "Monthly",
+      isActive: false,
+    },
+  ],
+  servers: [
+    {
+      id: 1,
+      name: "Megaman",
+    },
+    {
+      id: 2,
+      name: "Zero",
+    },
+    {
+      id: 3,
+      name: "Segma",
+    },
+  ],
 };
 
 export default data;
