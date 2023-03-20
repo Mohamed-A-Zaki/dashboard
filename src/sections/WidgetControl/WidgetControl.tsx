@@ -1,10 +1,10 @@
 import data from "../../data/data";
-import { Form } from "react-bootstrap";
 
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
+import CustomFormChech from "../../components/CustomFormChech/CustomFormChech";
 
 const WidgetControl = () => {
   return (
@@ -14,15 +14,8 @@ const WidgetControl = () => {
         <SectionSubTitle>Show/Hide Widgets</SectionSubTitle>
       </SectionHeading>
 
-      {data.widgets_list.map(({ id, name, isActive }) => (
-        <Form.Check
-          key={id}
-          type="checkbox"
-          id={id.toString()}
-          className="custom-form-check mb-3"
-          label={name}
-          defaultChecked={isActive}
-        />
+      {data.widgets_list.map((item) => (
+        <CustomFormChech key={item.id} type="checkbox" {...item} />
       ))}
     </Section>
   );
