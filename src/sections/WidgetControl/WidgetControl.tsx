@@ -1,4 +1,3 @@
-import "./WidgetControl.scss";
 import data from "../../data/data";
 import { Form } from "react-bootstrap";
 
@@ -20,7 +19,7 @@ const WidgetControl = () => {
           key={id}
           type="checkbox"
           id={id.toString()}
-          className="mb-3"
+          className="custom-form-check mb-3"
           label={name}
           defaultChecked={isActive}
         />

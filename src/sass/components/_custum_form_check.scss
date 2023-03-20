@@ -1,0 +1,83 @@
+@use "../variables" as *;
+
+@mixin check_size($size) {
+  height: $size;
+  width: $size;
+  margin-top: -$size / 2;
+}
+
+@mixin centering() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-form-check {
+  padding-inline-start: 1.5rem;
+
+  .form-check-input {
+    box-shadow: none !important;
+    margin-inline-start: -1.5rem;
+
+    [dir="rtl"] & {
+      float: right;
+    }
+
+    &:checked {
+      + .form-check-label::after {
+        background-color: $blue-color;
+        transform: scale(1) rotate(0);
+      }
+      + .form-check-label::before {
+        border-color: $blue-color;
+      }
+    }
+
+    &[type="radio"] + .form-check-label {
+      &::after,
+      &::before {
+        content: "";
+        border-radius: 50%;
+      }
+
+      &::after {
+        @include check_size(12px);
+        inset-inline-start: -20px;
+      }
+    }
+  }
+
+  .form-check-label {
+    padding-inline-start: 0.25rem;
+    position: relative;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+      position: absolute;
+      @include check_size(20px);
+      inset-inline-start: -24px;
+      border-radius: 5px;
+      top: 50%;
+      transition: $main-transition;
+    }
+
+    &::after {
+      content: "+";
+      color: #fff;
+      font-size: 18px;
+      @include centering();
+      transform: scale(0) rotate(360deg);
+    }
+
+    &::before {
+      content: "";
+      background-color: #fff;
+      border: 2px solid $grey-color;
+    }
+
+    &:hover::before {
+      border-color: $blue-color;
+    }
+  }
+}

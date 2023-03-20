@@ -1,4 +1,3 @@
-import "./Plans.scss";
 import { Form } from "react-bootstrap";
 import data from "../../data/data";
 
@@ -12,7 +11,7 @@ const Plans = () => {
           label={name}
           name="plans"
           id={name.toLowerCase()}
-          className="mt-3"
+          className="custom-form-check mt-3"
           defaultChecked={isActive}
         />
       ))}
