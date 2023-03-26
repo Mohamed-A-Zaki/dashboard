@@ -15,7 +15,12 @@ const WidgetControl = () => {
       </SectionHeading>
 
       {data.widgets_list.map((item) => (
-        <CustomFormChech key={item.id} type="checkbox" {...item} />
+        <CustomFormChech
+          key={item.id}
+          type="checkbox"
+          name="widgets"
+          {...item}
+        />
       ))}
     </Section>
   );

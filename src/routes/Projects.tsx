@@ -1,12 +1,21 @@
-import React from "react";
+import { Col, Row } from "react-bootstrap";
+import Project from "../sections/Project/Project";
 import Mainheading from "../components/Mainheading/Mainheading";
 
-type Props = {};
+import data from "../data/data";
 
-const Projects = (props: Props) => {
+const Projects = () => {
   return (
     <div className="projects-page">
       <Mainheading>Projects</Mainheading>
+
+      <Row xs={1} xl={2} className="g-3">
+        {data.projects.map((project) => (
+          <Col key={project.id}>
+            <Project {...project} />
+          </Col>
+        ))}
+      </Row>
     </div>
   );
 };

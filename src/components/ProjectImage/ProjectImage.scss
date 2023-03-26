@@ -1,0 +1,12 @@
+.project-image {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  padding: 2px;
+  &:hover {
+    z-index: 1000;
+  }
+  &:not(:first-child) {
+    margin-inline-start: -15px;
+  }
+}

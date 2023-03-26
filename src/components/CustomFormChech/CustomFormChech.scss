@@ -3,7 +3,7 @@
 @mixin check_size($size) {
   height: $size;
   width: $size;
-  margin-top: -$size / 2;
+  margin-top: calc(-1 * $size / 2);
 }
 
 @mixin centering() {

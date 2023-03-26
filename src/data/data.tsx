@@ -388,6 +388,10 @@ const data = {
       price: "$5300",
       team: [team_1, team_2, team_3],
       status: "Pending",
+      progress: 50,
+      description:
+        "Elzero Dashboard Project Design And Programming And Hosting",
+      tags: ["Programming", "Design", "Hosting", "Marketing"],
     },
     {
       id: 2,
@@ -397,6 +401,9 @@ const data = {
       price: "$1500",
       team: [team_1, team_2, team_5],
       status: "In Progress",
+      progress: 70,
+      description: "Academy Portal Project Design And Programming",
+      tags: ["Programming", "Design", "Marketing"],
     },
     {
       id: 3,
@@ -406,6 +413,9 @@ const data = {
       price: "$800",
       team: [team_4, team_5],
       status: "Completed",
+      progress: 60,
+      description: "Chatting Application Project Design",
+      tags: ["Programming", "Design"],
     },
     {
       id: 4,
@@ -415,6 +425,9 @@ const data = {
       price: "$600",
       team: [team_1, team_3, team_4, team_5],
       status: "Completed",
+      progress: 50,
+      description: "Ahmed Portal Project Design And Programming",
+      tags: ["Programming", "Marketing"],
     },
     {
       id: 5,
@@ -424,6 +437,9 @@ const data = {
       price: "$300",
       team: [team_3, team_4],
       status: "Pending",
+      progress: 70,
+      description: "Mohamed Application Project Design",
+      tags: ["Programming", "Hosting", "Marketing"],
     },
     {
       id: 6,
@@ -433,54 +449,58 @@ const data = {
       price: "$2600",
       team: [team_1, team_2, team_5],
       status: "Completed",
+      progress: 50,
+      description:
+        "Mohamed Dashboard Project Design And Programming And Hosting",
+      tags: ["Programming", "Design", "Hosting"],
     },
   ],
   widgets_list: [
     {
       id: 1,
-      name: "Quick Draft",
+      label: "Quick Draft",
       isActive: true,
     },
     {
       id: 2,
-      name: "Yearly Targets",
+      label: "Yearly Targets",
       isActive: true,
     },
     {
       id: 3,
-      name: "Tickets Statistics",
+      label: "Tickets Statistics",
       isActive: true,
     },
     {
       id: 4,
-      name: "Latest News",
+      label: "Latest News",
       isActive: true,
     },
     {
       id: 5,
-      name: "Latest Tasks",
+      label: "Latest Tasks",
       isActive: false,
     },
     {
       id: 6,
-      name: "Top Search Items",
+      label: "Top Search Items",
       isActive: false,
     },
   ],
   plans: [
     {
       id: 1,
-      name: "Daily",
+      label: "Daily",
       isActive: false,
     },
     {
       id: 2,
-      name: "Weekly",
+      label: "Weekly",
       isActive: true,
     },
     {
       id: 3,
-      name: "Monthly",
+      label: "Monthly",
       isActive: false,
     },
   ],

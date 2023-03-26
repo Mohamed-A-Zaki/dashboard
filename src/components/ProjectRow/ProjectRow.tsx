@@ -1,5 +1,6 @@
 import "./ProjectRow.scss";
 import { Badge, Image } from "react-bootstrap";
+import ProjectImage from "../ProjectImage/ProjectImage";
 
 type Props = {
   name: string;
@@ -14,20 +15,15 @@ const ProjectRow = (props: Props) => {
   const { name, finish_date, client, price, team, status } = props;
 
   const team_members = team.map((ele, indx) => {
-    return (
-      <Image
-        key={indx}
-        src={ele}
-        alt={`team_member_${indx}`}
-        className="rounded-circle bg-white"
-      />
-    );
+    return <ProjectImage key={indx} ele={ele} indx={indx} />;
   });
 
   const status_element = (
     <Badge
       bg=""
-      className={`status ${status.toLowerCase().replace(" ", "-")} text-white m-auto d-block`}
+      className={`status ${status
+        .toLowerCase()
+        .replace(" ", "-")} text-white m-auto d-block`}
     >
       {status}
     </Badge>

@@ -5,7 +5,7 @@ const Plans = () => {
   return (
     <div className="plans">
       {data.plans.map((item) => (
-        <CustomFormChech key={item.id} type="radio" {...item} />
+        <CustomFormChech key={item.id} type="radio" name="plans" {...item} />
       ))}
     </div>
   );

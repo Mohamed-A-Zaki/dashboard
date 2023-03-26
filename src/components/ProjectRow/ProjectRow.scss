@@ -8,13 +8,6 @@
   td {
     transition: $main-transition;
   }
-  img {
-    width: 2rem;
-    padding: 2px;
-    &:not(:first-child) {
-      margin-inline-start: -15px;
-    }
-  }
   .status {
     width: 80px;
     &.completed {

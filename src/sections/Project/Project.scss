@@ -1,0 +1,21 @@
+@use "../../sass/variables" as *;
+
+.project {
+  .date {
+    inset-inline-end: 0;
+  }
+  .badge {
+    background-color: $light-color !important;
+  }
+  .price {
+    margin-inline-start: auto;
+  }
+  .progress {
+    height: 5px;
+    width: 300px;
+  }
+  .progress-bar {
+    background-color: $blue-color;
+    border-radius: 0.375rem;
+  }
+}
