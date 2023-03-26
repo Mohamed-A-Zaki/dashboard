@@ -3,7 +3,7 @@
 .welcome {
   padding: 0 !important;
   .intro {
-    background-color: #eee;
+    background-color: $light-color;
     margin-bottom: calc(1.5rem + 30px);
     img.welcome-image {
       width: 200px;
