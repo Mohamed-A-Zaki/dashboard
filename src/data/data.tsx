@@ -41,6 +41,12 @@ import file_4 from "../assets/zip.svg";
 import file_5 from "../assets/dll.svg";
 import file_6 from "../assets/eps.svg";
 
+import course_1 from "../assets/course-01.jpg";
+import course_2 from "../assets/course-02.jpg";
+import course_3 from "../assets/course-03.jpg";
+import course_4 from "../assets/course-04.jpg";
+import course_5 from "../assets/course-05.jpg";
+
 const data = {
   welcome_info: [
     {
@@ -516,6 +522,98 @@ const data = {
     {
       id: 3,
       name: "Segma",
+    },
+  ],
+  courses: [
+    {
+      id: 1,
+      name: "Mastering Web Design",
+      desc: "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      students: 950,
+      price: 165,
+      instructor: team_1,
+      image: course_1,
+    },
+    {
+      id: 2,
+      name: "Data Structure And Algorithms",
+      desc: "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+      students: 1150,
+      price: 210,
+      instructor: team_2,
+      image: course_2,
+    },
+    {
+      id: 3,
+      name: "Mastering Web Design",
+      desc: "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+      students: 650,
+      price: 90,
+      instructor: team_3,
+      image: course_3,
+    },
+    {
+      id: 4,
+      name: "Mastering Python",
+      desc: "Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+      students: 950,
+      price: 250,
+      instructor: team_4,
+      image: course_4,
+    },
+    {
+      id: 5,
+      name: "PHP Examples",
+      desc: "PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+      students: 850,
+      price: 150,
+      instructor: team_5,
+      image: course_5,
+    },
+    {
+      id: 6,
+      name: "Mastering Web Design",
+      desc: "Master The Art Of Web Designing And Mocking, Prototyping And Creating Web Design Architecture",
+      students: 950,
+      price: 165,
+      instructor: team_1,
+      image: course_1,
+    },
+    {
+      id: 7,
+      name: "Data Structure And Algorithms",
+      desc: "Master The Art Of Data Strcuture And Famous Algorithms Like Sorting, Dividing And Conquering",
+      students: 1150,
+      price: 210,
+      instructor: team_2,
+      image: course_2,
+    },
+    {
+      id: 8,
+      name: "Mastering Web Design",
+      desc: "Mastering Responsive Web Design And Media Queries And Know Everything About Breakpoints",
+      students: 650,
+      price: 90,
+      instructor: team_3,
+      image: course_3,
+    },
+    {
+      id: 9,
+      name: "Mastering Python",
+      desc: "Mastering Python To Prepare For Data Science And AI And Automating Things in Your Life",
+      students: 950,
+      price: 250,
+      instructor: team_4,
+      image: course_4,
+    },
+    {
+      id: 10,
+      name: "PHP Examples",
+      desc: "PHP Tutorials And Examples And Practice On Web Application And Connecting With Databases",
+      students: 850,
+      price: 150,
+      instructor: team_5,
+      image: course_5,
     },
   ],
 };
