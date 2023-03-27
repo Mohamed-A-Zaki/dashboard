@@ -20,7 +20,7 @@ const Course = ({ name, image, desc, students, price, instructor }: Props) => {
         className="instructor position-absolute rounded-circle border border-2"
       />
 
-      <Card.Img variant="top" src={image} />
+      <Card.Img variant="top" src={image} alt={name} />
 
       <Card.Body>
         <Card.Title className="fw-semibold">{name}</Card.Title>
