@@ -1,9 +1,11 @@
+@use "./variables" as *;
+
 body {
   font-family: "Open Sans", sans-serif !important;
   background-color: #f1f5f9 !important;
 }
 *::selection {
-  background-color: #000;
+  background-color: $blue-color;
   color: #fff;
 }
 textarea {
