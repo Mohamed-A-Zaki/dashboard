@@ -693,7 +693,7 @@ const data = {
       name: "Amr Hendawy",
       job: "Back-End Developer",
       join_date: "28/06/2020",
-      isVIP: false,
+      isVIP: true,
       image: friend_1,
       stats: {
         friends: 70,
@@ -732,7 +732,7 @@ const data = {
       name: "Gareeb Elshiekh",
       job: "JavaScript Developer",
       join_date: "02/10/2020",
-      isVIP: true,
+      isVIP: false,
       image: friend_4,
       stats: {
         friends: 90,
@@ -745,7 +745,7 @@ const data = {
       name: "Hamza",
       job: "Front-End Developer",
       join_date: "02/06/2020",
-      isVIP: true,
+      isVIP: false,
       image: friend_5,
       stats: {
         friends: 80,
