@@ -1,6 +1,7 @@
 import "./Course.scss";
 import { Card, Image } from "react-bootstrap";
 import { FaUser, FaDollarSign } from "react-icons/fa";
+import MainButton from "../../components/MainButton/MainButton";
 
 type Props = {
   name: string;
@@ -28,9 +29,9 @@ const Course = ({ name, image, desc, students, price, instructor }: Props) => {
       </Card.Body>
 
       <Card.Footer className="bg-white position-relative">
-        <span className="info-btn main_btn position-absolute top-0 start-50 translate-middle">
+        <MainButton className="info-btn position-absolute top-0 start-50 translate-middle">
           course info
-        </span>
+        </MainButton>
         <div className="d-flex align-items-center justify-content-between text-black-50 my-2">
           <div className="student-count d-flex align-items-center gap-1">
             <FaUser />

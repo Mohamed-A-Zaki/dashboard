@@ -1,6 +1,7 @@
-import { Button, Form } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 
 import Section from "../../components/Section/Section";
+import MainButton from "../../components/MainButton/MainButton";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
@@ -30,9 +31,9 @@ const QuickDraft = () => {
             className="shadow-none"
           />
         </Form.Group>
-        <Button type="submit" variant="" className="main_btn d-block">
+        <MainButton className="d-block" type="submit">
           Save
-        </Button>
+        </MainButton>
       </Form>
     </Section>
   );

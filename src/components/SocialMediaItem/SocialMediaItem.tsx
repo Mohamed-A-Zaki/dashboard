@@ -1,6 +1,7 @@
 import "./SocialMediaItem.scss";
 import { IconType } from "react-icons";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import MainButton from "../MainButton/MainButton";
 
 type Props = {
   text: string;
@@ -10,18 +11,17 @@ type Props = {
 };
 
 const SocialMediaItem = ({ text, label, type, Icon }: Props) => {
+  let navigate = useNavigate();
+
   return (
-    <div className={`social-item my-3 d-flex align-items-center gap-3 rounded ${type}`}>
+    <div
+      className={`social-item my-3 d-flex align-items-center gap-3 rounded ${type}`}
+    >
       <div className="icon text-white d-flex align-items-center justify-content-center">
         <Icon className="fs-2" />
       </div>
       <div className="text">{text}</div>
-      <Link
-        to="#"
-        className="main_btn text-decoration-none"
-      >
-        {label}
-      </Link>
+      <MainButton onClick={() => navigate("#")}>{label}</MainButton>
     </div>
   );
 };

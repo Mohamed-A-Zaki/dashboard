@@ -1,8 +1,9 @@
 import "./Welcome.scss";
 import { Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import Section from "../../components/Section/Section";
+import MainButton from "../../components/MainButton/MainButton";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
@@ -12,6 +13,8 @@ import avatar from "../../assets/avatar.png";
 import welcome from "../../assets/welcome.png";
 
 const Welcome = () => {
+  let navigate = useNavigate();
+
   return (
     <Section className="welcome overflow-hidden">
       <div className="intro d-flex justify-content-between p-3 position-relative">
@@ -36,12 +39,9 @@ const Welcome = () => {
         ))}
       </div>
 
-      <Link
-        to="/profile"
-        className="main_btn text-decoration-none my-3 d-block"
-      >
+      <MainButton className="my-3 d-block" onClick={() => navigate("/profile")}>
         Profile
-      </Link>
+      </MainButton>
     </Section>
   );
 };

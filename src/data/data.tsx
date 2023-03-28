@@ -47,6 +47,12 @@ import course_3 from "../assets/course-03.jpg";
 import course_4 from "../assets/course-04.jpg";
 import course_5 from "../assets/course-05.jpg";
 
+import friend_1 from "../assets/friend-01.jpg";
+import friend_2 from "../assets/friend-02.jpg";
+import friend_3 from "../assets/friend-03.jpg";
+import friend_4 from "../assets/friend-04.jpg";
+import friend_5 from "../assets/friend-05.jpg";
+
 const data = {
   welcome_info: [
     {
@@ -614,6 +620,138 @@ const data = {
       price: 150,
       instructor: team_5,
       image: course_5,
+    },
+  ],
+  friends: [
+    {
+      id: 1,
+      name: "Ahmed Nasser",
+      job: "JavaScript Developer",
+      join_date: "02/10/2021",
+      isVIP: true,
+      image: friend_1,
+      stats: {
+        friends: 99,
+        projects: 15,
+        articles: 25,
+      },
+    },
+    {
+      id: 2,
+      name: "Omar Fathy",
+      job: "Cloud Developer",
+      join_date: "02/08/2020",
+      isVIP: false,
+      image: friend_2,
+      stats: {
+        friends: 30,
+        projects: 11,
+        articles: 12,
+      },
+    },
+    {
+      id: 3,
+      name: "Omar Ahmed",
+      job: "Mobile Developer",
+      join_date: "02/06/2020",
+      isVIP: false,
+      image: friend_3,
+      stats: {
+        friends: 80,
+        projects: 20,
+        articles: 18,
+      },
+    },
+    {
+      id: 4,
+      name: "Shady Nabil",
+      job: "Back-End Developer",
+      join_date: "28/06/2020",
+      isVIP: false,
+      image: friend_4,
+      stats: {
+        friends: 80,
+        projects: 20,
+        articles: 18,
+      },
+    },
+    {
+      id: 5,
+      name: "Mohamed Ibrahim",
+      job: "Algorithm Developer",
+      join_date: "28/06/2020",
+      isVIP: false,
+      image: friend_5,
+      stats: {
+        friends: 80,
+        projects: 30,
+        articles: 18,
+      },
+    },
+    {
+      id: 6,
+      name: "Amr Hendawy",
+      job: "Back-End Developer",
+      join_date: "28/06/2020",
+      isVIP: false,
+      image: friend_1,
+      stats: {
+        friends: 70,
+        projects: 30,
+        articles: 18,
+      },
+    },
+    {
+      id: 7,
+      name: "Mahmoud Adel",
+      job: "Cloud Developer",
+      join_date: "02/08/2020",
+      isVIP: false,
+      image: friend_2,
+      stats: {
+        friends: 30,
+        projects: 11,
+        articles: 12,
+      },
+    },
+    {
+      id: 8,
+      name: "Ahmed Abuzaid",
+      job: "Content Creator",
+      join_date: "28/08/2020",
+      isVIP: true,
+      image: friend_3,
+      stats: {
+        friends: 80,
+        projects: 30,
+        articles: 18,
+      },
+    },
+    {
+      id: 9,
+      name: "Gareeb Elshiekh",
+      job: "JavaScript Developer",
+      join_date: "02/10/2020",
+      isVIP: true,
+      image: friend_4,
+      stats: {
+        friends: 90,
+        projects: 15,
+        articles: 25,
+      },
+    },
+    {
+      id: 10,
+      name: "Hamza",
+      job: "Front-End Developer",
+      join_date: "02/06/2020",
+      isVIP: true,
+      image: friend_5,
+      stats: {
+        friends: 80,
+        projects: 20,
+        articles: 18,
+      },
     },
   ],
 };

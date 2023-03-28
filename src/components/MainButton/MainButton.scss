@@ -1,0 +1,12 @@
+@use "../../sass/variables" as *;
+
+.main_btn {
+  width: 80px !important;
+  font-size: 14px !important;
+  margin-inline-start: auto !important;
+  background-color: $blue-color !important;
+  border-color: $blue-color !important;
+  &:hover {
+    background-color: $blue-alt-color !important;
+  }
+}

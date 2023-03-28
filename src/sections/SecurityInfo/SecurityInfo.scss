@@ -8,6 +8,8 @@
     .devices {
       button {
         background-color: $light-color !important;
+        border-color: $light-color !important;
+        color: #000 !important;
       }
     }
   }

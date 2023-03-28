@@ -4,8 +4,9 @@
     color: $color;
   }
   .icon,
-  a {
+  .main_btn {
     background-color: $color !important;
+    border-color: $color !important;
   }
 }
 
@@ -16,9 +17,8 @@
     border-start-start-radius: 0.375rem;
     border-end-start-radius: 0.375rem;
   }
-  a {
-    font-size: 13px;
-    width: 80px;
+  .main_btn {
+    font-size: 13px !important;
     margin-inline-end: 1rem;
   }
   &.twitter {
