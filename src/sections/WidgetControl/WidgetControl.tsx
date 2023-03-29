@@ -4,7 +4,7 @@ import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
-import CustomFormChech from "../../components/CustomFormChech/CustomFormChech";
+import CustomFormCheck from "../../components/CustomFormCheck/CustomFormCheck";
 
 const WidgetControl = () => {
   return (
@@ -15,7 +15,7 @@ const WidgetControl = () => {
       </SectionHeading>
 
       {data.widgets_list.map((item) => (
-        <CustomFormChech
+        <CustomFormCheck
           key={item.id}
           type="checkbox"
           name="widgets"

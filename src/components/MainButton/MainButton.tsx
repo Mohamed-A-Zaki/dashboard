@@ -1,17 +1,12 @@
-import React from "react";
 import "./MainButton.scss";
-import { Button } from "react-bootstrap";
+import { Button, ButtonProps } from "react-bootstrap";
 
-type Props = {
-  children: string;
-} & Omit<React.ComponentProps<typeof Button>, "children">;
-
-const MainButton = ({ className = "", children, ...rest }: Props) => {
+const MainButton = ({ className = "", children, ...props }: ButtonProps) => {
   return (
     <Button
+      {...props}
       variant=""
       className={`main_btn py-1 px-2 text-center text-white ${className}`}
-      {...rest}
     >
       {children}
     </Button>
