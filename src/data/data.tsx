@@ -494,12 +494,12 @@ const data = {
       defaultChecked: false,
     },
     {
-      id:  "Top Search Items",
+      id: "Top Search Items",
       label: "Top Search Items",
       defaultChecked: false,
     },
   ],
-  plans: [
+  times: [
     {
       id: "Daily",
       label: "Daily",
@@ -752,6 +752,167 @@ const data = {
         projects: 20,
         articles: 18,
       },
+    },
+  ],
+  plans: [
+    {
+      id: 1,
+      name: "Free",
+      price: "0.00",
+      features: [
+        {
+          id: 1,
+          name: "Access All Text Lessons",
+          isActive: true,
+        },
+        {
+          id: 2,
+          name: "Access All Videos Lessons",
+          isActive: true,
+        },
+        {
+          id: 3,
+          name: "Appear On Leaderboard",
+          isActive: true,
+        },
+        {
+          id: 4,
+          name: "Browse Content Without Ads",
+          isActive: false,
+        },
+        {
+          id: 5,
+          name: "Access All Assignments",
+          isActive: false,
+        },
+        {
+          id: 6,
+          name: "Get Daily Prizes",
+          isActive: false,
+        },
+        {
+          id: 7,
+          name: "Earn Certificate",
+          isActive: false,
+        },
+        {
+          id: 8,
+          name: "1 GB Space For Hosting Files",
+          isActive: false,
+        },
+        {
+          id: 9,
+          name: "Access Badge System",
+          isActive: false,
+        },
+      ],
+      joined: false,
+    },
+    {
+      id: 2,
+      name: "Basic",
+      price: "7.99",
+      features: [
+        {
+          id: 1,
+          name: "Access All Text Lessons",
+          isActive: true,
+        },
+        {
+          id: 2,
+          name: "Access All Videos Lessons",
+          isActive: true,
+        },
+        {
+          id: 3,
+          name: "Appear On Leaderboard",
+          isActive: true,
+        },
+        {
+          id: 4,
+          name: "Browse Content Without Ads",
+          isActive: true,
+        },
+        {
+          id: 5,
+          name: "Access All Assignments",
+          isActive: true,
+        },
+        {
+          id: 6,
+          name: "Get Daily Prizes",
+          isActive: true,
+        },
+        {
+          id: 7,
+          name: "Earn Certificate",
+          isActive: true,
+        },
+        {
+          id: 8,
+          name: "1 GB Space For Hosting Files",
+          isActive: false,
+        },
+        {
+          id: 9,
+          name: "Access Badge System",
+          isActive: false,
+        },
+      ],
+      joined: false,
+    },
+    {
+      id: 3,
+      name: "Premium",
+      price: "19.99",
+      features: [
+        {
+          id: 1,
+          name: "Access All Text Lessons",
+          isActive: true,
+        },
+        {
+          id: 2,
+          name: "Access All Videos Lessons",
+          isActive: true,
+        },
+        {
+          id: 3,
+          name: "Appear On Leaderboard",
+          isActive: true,
+        },
+        {
+          id: 4,
+          name: "Browse Content Without Ads",
+          isActive: true,
+        },
+        {
+          id: 5,
+          name: "Access All Assignments",
+          isActive: true,
+        },
+        {
+          id: 6,
+          name: "Get Daily Prizes",
+          isActive: true,
+        },
+        {
+          id: 7,
+          name: "Earn Certificate",
+          isActive: true,
+        },
+        {
+          id: 8,
+          name: "1 GB Space For Hosting Files",
+          isActive: true,
+        },
+        {
+          id: 9,
+          name: "Access Badge System",
+          isActive: true,
+        },
+      ],
+      joined: true,
     },
   ],
 };

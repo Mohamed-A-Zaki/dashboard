@@ -1,4 +1,4 @@
-import Plans from "../../components/Plans/Plans";
+import Times from "../../components/Times/Times";
 import Servers from "../../components/Servers/Servers";
 
 import Section from "../../components/Section/Section";
@@ -14,7 +14,7 @@ const BackupManager = () => {
         <SectionSubTitle>Control Backup Time And Location</SectionSubTitle>
       </SectionHeading>
 
-      <Plans />
+      <Times />
       <Servers />
     </Section>
   );
