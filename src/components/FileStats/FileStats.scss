@@ -1,0 +1,28 @@
+@use "../../sass/variables" as *;
+
+@mixin Styles($color) {
+  svg {
+    color: $color;
+    background-color: rgba($color, 0.2);
+  }
+}
+
+.file-stats {
+  font-size: 14px;
+  svg {
+    font-size: 45px;
+    padding: 12px;
+  }
+  &.PDF {
+    @include Styles($blue-color);
+  }
+  &.Word {
+    @include Styles($red-color);
+  }
+  &.CSV {
+    @include Styles($orange-color);
+  }
+  &.Images {
+    @include Styles($green-color);
+  }
+}

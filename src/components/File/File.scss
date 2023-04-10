@@ -1,0 +1,13 @@
+@use "../../sass/variables" as *;
+
+.file {
+  font-size: 14px !important;
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  .file-name {
+    font-size: inherit !important;
+  }
+}

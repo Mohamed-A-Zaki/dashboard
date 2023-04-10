@@ -43,7 +43,7 @@ const Plan = ({ name, price, joined, features }: Props) => {
                 )}
                 <span>{name}</span>
               </div>
-              <IoMdInformationCircle className="fs-5 text-secondary" />
+              <IoMdInformationCircle className="help fs-5 text-secondary" />
             </div>
           );
         })}
