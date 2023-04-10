@@ -859,7 +859,7 @@ const data = {
           isActive: false,
         },
       ],
-      joined: false,
+      joined: true,
     },
     {
       id: 3,
@@ -912,7 +912,7 @@ const data = {
           isActive: true,
         },
       ],
-      joined: true,
+      joined: false,
     },
   ],
 };

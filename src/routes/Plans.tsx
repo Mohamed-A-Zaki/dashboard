@@ -1,17 +1,16 @@
-import Mainheading from "../components/Mainheading/Mainheading";
 import { Col, Row } from "react-bootstrap";
 
-type Props = {};
+import Plan from "../sections/Plan/Plan";
+import Mainheading from "../components/Mainheading/Mainheading";
 
 import data from "../data/data";
-import Plan from "../sections/Plan/Plan";
 
-const Plans = (props: Props) => {
+const Plans = () => {
   return (
     <div className="plans-page">
       <Mainheading>Plans</Mainheading>
 
-      <Row xs={1} xl={2} className="g-3">
+      <Row xs={1} lg={2} xl={3} className="g-3">
         {data.plans.map((plan) => (
           <Col key={plan.id}>
             <Plan {...plan} />

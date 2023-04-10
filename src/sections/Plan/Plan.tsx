@@ -51,7 +51,7 @@ const Plan = ({ name, price, joined, features }: Props) => {
 
       <div className="join mt-3">
         {joined ? (
-          <div className="text-center text-black-50 fw-semibold">
+          <div className="current-plan text-center fw-semibold">
             This Is Your Current Plan
           </div>
         ) : (
