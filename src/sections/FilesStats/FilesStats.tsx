@@ -1,3 +1,5 @@
+import "./FilesStats.scss";
+
 import Section from "../../components/Section/Section";
 import FileStats from "../../components/FileStats/FileStats";
 import MainButton from "../../components/MainButton/MainButton";
@@ -18,10 +20,7 @@ const FilesStats = () => {
         return <FileStats key={file.id} {...file} />;
       })}
 
-      <MainButton
-        style={{ width: "auto" }}
-        className="d-flex align-items-center m-auto gap-2"
-      >
+      <MainButton className="d-flex align-items-center m-auto gap-2">
         <FaArrowUp />
         Upload
       </MainButton>

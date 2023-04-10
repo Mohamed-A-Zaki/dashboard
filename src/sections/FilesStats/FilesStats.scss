@@ -1,0 +1,11 @@
+@use "../../sass/variables" as *;
+
+.files-stats {
+  .main_btn {
+    width: auto;
+    padding: 0.5rem !important;
+    &:hover svg {
+      animation: bounce-up 0.5s linear infinite alternate;
+    }
+  }
+}
