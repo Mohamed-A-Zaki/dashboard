@@ -7,11 +7,11 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 
 import data from "../../data/data";
-import { FaArrowUp } from "react-icons/fa";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 const FilesStats = () => {
   return (
-    <Section className="files-stats">
+    <Section className="files-stats h-auto">
       <SectionHeading>
         <SectionTitle>Files Statistics</SectionTitle>
       </SectionHeading>
@@ -21,7 +21,7 @@ const FilesStats = () => {
       })}
 
       <MainButton className="d-flex align-items-center m-auto gap-2">
-        <FaArrowUp />
+        <FaAngleDoubleUp />
         Upload
       </MainButton>
     </Section>
