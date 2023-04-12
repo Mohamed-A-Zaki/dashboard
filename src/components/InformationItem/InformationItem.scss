@@ -1,0 +1,11 @@
+@use "../../sass/variables" as *;
+
+.information-item {
+  transition: $main-transition;
+  &:last-child {
+    border-bottom: 0 !important;
+  }
+  &:hover {
+    background-color: $light-color;
+  }
+}
