@@ -1150,6 +1150,48 @@ const data = {
       Icon: FaFileCsv,
     },
   ],
+  information: [
+    {
+      id: 1,
+      title: "General Information",
+      content: {
+        "Full Name": "Osama Mohamed",
+        Gender: "Male",
+        Country: "Egypt",
+      },
+      isActive: true,
+    },
+    {
+      id: 2,
+      title: "Personal Information",
+      content: {
+        Email: "o@nn.sa",
+        Phone: "019123456789",
+        "Date Of Birth": "25/10/1982",
+      },
+      isActive: false,
+    },
+    {
+      id: 3,
+      title: "Job Information",
+      content: {
+        Title: "Full Stack Developer",
+        "Programming Language": "Python",
+        "Years Of Experience": "15+",
+      },
+      isActive: true,
+    },
+    {
+      id: 4,
+      title: "Billing Information",
+      content: {
+        "Payment Method": "Paypal",
+        Email: "email@website.com",
+        Subscription: "Monthly",
+      },
+      isActive: false,
+    },
+  ],
 };
 
 export default data;

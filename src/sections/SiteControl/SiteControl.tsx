@@ -24,7 +24,7 @@ const SiteControl = () => {
               Open/Close Website And Type The Reason
             </div>
           </div>
-          <Switch />
+          <Switch defaultChecked={true} />
         </div>
         <Form.Control
           as="textarea"

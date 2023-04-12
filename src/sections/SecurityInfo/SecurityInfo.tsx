@@ -35,7 +35,7 @@ const SecurityInfo = () => {
               Enable/Disable The Feature
             </div>
           </div>
-          <Switch />
+          <Switch defaultChecked={true} />
         </div>
 
         <div className="devices d-flex align-items-center justify-content-between pb-3 mt-3">

@@ -1,14 +1,9 @@
 import "./Switch.scss";
-import { Form } from "react-bootstrap";
+import { Form, FormCheckProps } from "react-bootstrap";
 
-const Switch = () => {
+const Switch = (props: FormCheckProps) => {
   return (
-    <Form.Check
-      type="switch"
-      className="fs-4"
-      aria-label="switch"
-      defaultChecked={true}
-    />
+    <Form.Check type="switch" className="fs-4" aria-label="switch" {...props} />
   );
 };
 
