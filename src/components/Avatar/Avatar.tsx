@@ -12,7 +12,7 @@ const Avatar = () => {
         className="img-thumbnail rounded-circle"
       />
 
-      <h4 className="name my-3">Osama Elzero</h4>
+      <h3 className="name h4 my-3">Osama Elzero</h3>
       <div className="level text-black-50 my-3">Level 20</div>
       <ProgressBar now={60} className="m-auto" />
 

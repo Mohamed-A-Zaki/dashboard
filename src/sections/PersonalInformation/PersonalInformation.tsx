@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 
 const PersonalInformation = () => {
   return (
-    <Section className="personal-information">
+    <Section className="personal-information mb-3">
       <Row className="align-items-center g-3 g-lg-0">
         <Col lg={3}>
           <Avatar />

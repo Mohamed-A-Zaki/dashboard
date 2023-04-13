@@ -10,9 +10,9 @@ type Props = {
 const InformationItem = ({ title, content, isActive }: Props) => {
   return (
     <div className="information-item p-3 border-bottom rounded">
-      <div className="title text-black-50 fw-semibold">{title}</div>
+      <h4 className="title h6 text-black-50 fw-semibold">{title}</h4>
 
-      <div className="d-flex flex-column flex-lg-row gap-3 gap-xl-5 my-2">
+      <div className="d-flex flex-wrap gap-3 gap-xxl-5 my-2">
         {Object.keys(content).map((ele, indx) => (
           <div key={indx} className="d-flex gap-1">
             <span className="text-black-50 fw-semibold">{ele} :</span>

@@ -9,7 +9,7 @@ const Courses = () => {
     <div className="courses-page">
       <Mainheading>Courses</Mainheading>
 
-      <Row xs={1} lg={2} xl={3} className="g-3">
+      <Row xs={1} lg={2} xl={3} xxl={4} className="g-3">
         {data.courses.map((course) => (
           <Col key={course.id}>
             <Course {...course} />

@@ -5,7 +5,7 @@ import data from "../../data/data";
 
 const FilesSec = () => {
   return (
-    <Row xs={1} md={2} xl={3} className="g-3">
+    <Row xs={1} md={2} xl={3} xxl={4} className="g-3">
       {data.files.map((file) => (
         <Col key={file.id}>
           <File {...file} />

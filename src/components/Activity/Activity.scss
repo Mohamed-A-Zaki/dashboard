@@ -1,0 +1,12 @@
+@use "../../sass/variables" as *;
+
+.activity {
+  &:last-child {
+    border-bottom: 0 !important;
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+}

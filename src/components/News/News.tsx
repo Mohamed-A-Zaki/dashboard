@@ -12,7 +12,7 @@ const News = ({ title, description, date, img }: Props) => {
   return (
     <div className="news d-flex flex-column flex-md-row gap-3 align-items-center pb-3 mt-3">
       <Image src={img} className="rounded" alt={title} />
-      <div className="content text-center">
+      <div className="content text-center flex-grow-1">
         <div className="title fw-bold">{title}</div>
         <div className="description text-black-50">{description}</div>
       </div>

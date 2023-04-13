@@ -57,6 +57,10 @@ import friend_3 from "../assets/friend-03.jpg";
 import friend_4 from "../assets/friend-04.jpg";
 import friend_5 from "../assets/friend-05.jpg";
 
+import activity_1 from "../assets/activity-01.png";
+import activity_2 from "../assets/activity-02.png";
+import activity_3 from "../assets/activity-03.png";
+
 import pdf_file from "../assets/pdf.svg";
 import avi_file from "../assets/avi.svg";
 import eps_file from "../assets/eps.svg";
@@ -1190,6 +1194,49 @@ const data = {
         Subscription: "Monthly",
       },
       isActive: false,
+    },
+  ],
+  skills: {
+    html: ["HTML", "Pugjs", "HAML"],
+    css: ["CSS", "SASS", "Stylus"],
+    js: ["Javascript", "Typescript"],
+    frameworks: ["Reactjs", "Vuejs"],
+    test: ["Jest", "Jasmine"],
+    php: ["PHP", "Laravel"],
+    python: ["Python", "Django"],
+  },
+  activities: [
+    {
+      id: 1,
+      name: "Store",
+      desc: "Bought The Mastering Python Course",
+      time: "18:10",
+      day: "Yesterday",
+      img: activity_1,
+    },
+    {
+      id: 2,
+      name: "Academy",
+      desc: "Got The PHP Certificate",
+      time: "16:05",
+      day: "Yesterday",
+      img: activity_2,
+    },
+    {
+      id: 3,
+      name: "Badges",
+      desc: "Unlocked The 10 Skills Badge",
+      time: "18:10",
+      day: "Yesterday",
+      img: activity_3,
+    },
+    {
+      id: 4,
+      name: "Store",
+      desc: "Bought The Mastering Python Course",
+      time: "18:10",
+      day: "Yesterday",
+      img: activity_1,
     },
   ],
 };

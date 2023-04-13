@@ -9,7 +9,7 @@ type Props = {
 
 const Widgets = ({ sections }: Props) => {
   return (
-    <Row xs={1} xl={2} className="g-3">
+    <Row xs={1} lg={2} xxl={3} className="g-3">
       {sections.map(({ id, Section }) => (
         <Col key={id}>{<Section />}</Col>
       ))}

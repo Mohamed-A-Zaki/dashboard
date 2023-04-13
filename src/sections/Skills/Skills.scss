@@ -1,0 +1,14 @@
+@use "../../sass/variables" as *;
+
+.my-skills {
+  .item {
+    padding: 0.75rem 0;
+    &:last-child {
+      border-bottom: 0 !important;
+    }
+    .skill {
+      background-color: $light-color;
+      font-size: 14px;
+    }
+  }
+}
