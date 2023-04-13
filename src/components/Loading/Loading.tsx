@@ -1,9 +1,9 @@
-import { HashLoader  } from "react-spinners";
+import { FadeLoader } from "react-spinners";
 
 const Loading = () => {
   return (
-    <div className="loading position-absolute top-50 start-50 translate-middle">
-      <HashLoader  color="#0075ff" />
+    <div className="position-absolute top-50 start-50 translate-middle">
+      <FadeLoader color="#0075ff" aria-label="Loading Spinner" />
     </div>
   );
 };

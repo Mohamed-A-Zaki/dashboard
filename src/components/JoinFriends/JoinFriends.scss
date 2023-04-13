@@ -1,0 +1,14 @@
+@use "../../sass/variables" as *;
+
+.join-friends {
+  span {
+    font-size: 14px;
+  }
+  .remove {
+    background-color: $red-color !important;
+    border-color: $red-color !important;
+    &:hover {
+      background-color: #e61e10 !important;
+    }
+  }
+}

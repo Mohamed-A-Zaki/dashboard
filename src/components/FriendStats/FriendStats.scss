@@ -1,0 +1,9 @@
+@use "../../sass/variables" as *;
+
+.friend-stats {
+  font-size: 14px;
+  .vip {
+    color: $orange-color;
+    inset-inline-end: 0;
+  }
+}
