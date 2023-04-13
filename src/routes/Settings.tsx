@@ -1,3 +1,5 @@
+import useScrollToTop from "../Hooks/useScrollToTop";
+
 import Mainheading from "../components/Mainheading/Mainheading";
 import Widgets from "../components/Widgets/Widgets";
 import GeneralInfo from "../sections/GeneralInfo/GeneralInfo";
@@ -8,6 +10,8 @@ import WidgetControl from "../sections/WidgetControl/WidgetControl";
 import BackupManager from "../sections/BackupManager/BackupManager";
 
 const Settings = () => {
+  useScrollToTop();
+
   const sections = [
     { id: 1, Section: SiteControl },
     { id: 2, Section: GeneralInfo },

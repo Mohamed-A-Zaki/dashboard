@@ -3,7 +3,7 @@ import File from "../../components/File/File";
 
 import data from "../../data/data";
 
-const FilesSec = () => {
+const FilesList = () => {
   return (
     <Row xs={1} md={2} xl={3} xxl={4} className="g-3">
       {data.files.map((file) => (
@@ -15,4 +15,4 @@ const FilesSec = () => {
   );
 };
 
-export default FilesSec;
+export default FilesList;

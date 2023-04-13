@@ -1,3 +1,5 @@
+import useScrollToTop from "../Hooks/useScrollToTop";
+
 import Tickets from "../sections/Tickets/Tickets";
 import Welcome from "../sections/Welcome/Welcome";
 import QuickDraft from "../sections/QuickDraft/QuickDraft";
@@ -15,6 +17,8 @@ import ProjectsTable from "../sections/ProjectsTable/ProjectsTable";
 import Widgets from "../components/Widgets/Widgets";
 
 const Dashboard = () => {
+  useScrollToTop();
+
   const sections = [
     { id: 1, Section: Welcome },
     { id: 2, Section: QuickDraft },

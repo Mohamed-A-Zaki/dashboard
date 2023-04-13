@@ -1,21 +1,14 @@
-import { Col, Row } from "react-bootstrap";
-import Course from "../sections/Course/Course";
+import useScrollToTop from "../Hooks/useScrollToTop";
+import CoursesList from "../sections/CoursesList/CoursesList";
 import Mainheading from "../components/Mainheading/Mainheading";
 
-import data from "../data/data";
-
 const Courses = () => {
+  useScrollToTop();
+
   return (
     <div className="courses-page">
       <Mainheading>Courses</Mainheading>
-
-      <Row xs={1} lg={2} xl={3} xxl={4} className="g-3">
-        {data.courses.map((course) => (
-          <Col key={course.id}>
-            <Course {...course} />
-          </Col>
-        ))}
-      </Row>
+      <CoursesList />
     </div>
   );
 };

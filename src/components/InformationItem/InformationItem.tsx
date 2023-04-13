@@ -15,7 +15,7 @@ const InformationItem = ({ title, content, isActive }: Props) => {
       <div className="d-flex flex-wrap gap-3 gap-xxl-5 my-2">
         {Object.keys(content).map((ele, indx) => (
           <div key={indx} className="d-flex gap-1">
-            <span className="text-black-50 fw-semibold">{ele} :</span>
+            <span className="text-black-50">{ele} :</span>
             <span>{content[ele]}</span>
           </div>
         ))}

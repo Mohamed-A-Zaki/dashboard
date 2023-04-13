@@ -11,7 +11,7 @@ type Props = {
 
 const Activity = ({ name, desc, time, day, img }: Props) => {
   return (
-    <div className="activity border-bottom py-3 d-flex gap-3 align-items-center">
+    <div className="activity border-bottom py-3 d-flex gap-3 align-items-center flex-column flex-md-row text-center text-md-start">
       <Image src={img} alt={name} />
 
       <div className="flex-grow-1">
