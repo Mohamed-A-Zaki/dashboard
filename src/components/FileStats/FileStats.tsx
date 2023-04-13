@@ -13,14 +13,13 @@ const FileStats = ({ name, count, size, Icon }: Props) => {
     <div
       className={`file-stats ${
         name.split(" ")[0]
-      } d-flex align-items-center justify-content-between border rounded p-2 my-3`}
+      } d-flex align-items-center justify-content-between border rounded p-2 my-3 gap-3`}
     >
-      <div className="info d-flex align-items-center gap-3">
-        <Icon className="rounded"/>
-        <div>
-          <div className="name fw-semibold">{name}</div>
-          <div className="count text-black-50">{count} Files</div>
-        </div>
+      <Icon size={45} className="rounded" />
+
+      <div className="flex-grow-1">
+        <div className="name fw-semibold">{name}</div>
+        <div className="count text-black-50">{count} Files</div>
       </div>
 
       <div className="size text-black-50">{size}</div>

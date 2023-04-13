@@ -1,0 +1,6 @@
+.plan-header .price::after {
+  content: "$";
+  position: absolute;
+  font-size: 22px;
+  inset-inline-start: -20px;
+}

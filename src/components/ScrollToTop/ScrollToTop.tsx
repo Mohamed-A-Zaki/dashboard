@@ -14,12 +14,11 @@ const ScrollToTop = () => {
   return (
     <React.Fragment>
       {show && (
-        <div
+        <AiOutlineArrowUp
+          size={40}
           onClick={() => window.scrollTo({ top: 0 })}
-          className="scroll-to-top position-fixed bottom-0 end-0 m-4 text-white rounded-circle d-flex align-items-center justify-content-center"
-        >
-          <AiOutlineArrowUp className="fs-4" />
-        </div>
+          className="scroll-to-top position-fixed bottom-0 p-2 m-4 text-white rounded-circle"
+        />
       )}
     </React.Fragment>
   );

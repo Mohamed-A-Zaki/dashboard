@@ -17,9 +17,7 @@ const SocialMediaItem = ({ text, label, type, Icon }: Props) => {
     <div
       className={`social-item my-3 d-flex align-items-center gap-3 rounded ${type}`}
     >
-      <div className="icon text-white d-flex align-items-center justify-content-center">
-        <Icon className="fs-2" />
-      </div>
+      <Icon size={60} className="icon p-3 text-white" />
       <div className="text">{text}</div>
       <MainButton onClick={() => navigate("#")}>{label}</MainButton>
     </div>

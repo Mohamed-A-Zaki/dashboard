@@ -13,7 +13,7 @@ const Ticket = ({ type, count, Icon }: Props) => {
     <div
       className={`ticket ${type.toLowerCase()} border rounded-3 p-3 d-flex align-items-center justify-content-center flex-column`}
     >
-      <Icon className="fs-3" />
+      <Icon size={30} />
 
       <CountUp start={0} end={count} separator="" enableScrollSpy>
         {({ countUpRef }) => (

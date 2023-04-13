@@ -12,9 +12,7 @@ type Props = {
 const Target = ({ title, count, persentage, Icon }: Props) => {
   return (
     <div className={`target ${title.toLowerCase()} d-flex gap-2 mt-3`}>
-      <div className="icon p-4 d-flex align-items-center justify-content-center fs-4">
-        <Icon />
-      </div>
+      <Icon size={70} className="icon p-4" />
       <div className="details flex-grow-1 position-relative">
         <div className="title text-black-50">{title}</div>
         <div className="count fw-bold my-2">{count}</div>

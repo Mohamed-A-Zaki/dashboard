@@ -12,6 +12,7 @@ import {
   FaCode,
   FaNewspaper,
 } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 type Props = {
   id: number;
@@ -42,8 +43,12 @@ const Friend = (props: Props) => {
   return (
     <Section className="friend position-relative">
       <div className="contact position-absolute">
-        <FaPhoneAlt className="rounded-circle p-2 me-1" />
-        <FaRegEnvelope className="rounded-circle p-2 me-1" />
+        <IconContext.Provider
+          value={{ size: "30px", className: "rounded p-2 me-1" }}
+        >
+          <FaPhoneAlt />
+          <FaRegEnvelope />
+        </IconContext.Provider>
       </div>
 
       <div className="info text-center my-3">
@@ -53,23 +58,25 @@ const Friend = (props: Props) => {
       </div>
 
       <div className="stats my-3 py-3 border-top border-bottom position-relative d-flex flex-column gap-2">
-        <div className="d-flex align-items-center gap-2">
-          <FaRegSmile />
-          <span>{friends} Friends</span>
-        </div>
-        <div className="d-flex align-items-center gap-2">
-          <FaCode />
-          <span>{projects} Project</span>
-        </div>
-        <div className="d-flex align-items-center gap-2">
-          <FaNewspaper />
-          <span>{articles} Articles</span>
-        </div>
-        {isVIP && (
-          <div className="vip position-absolute top-50 fs-1 translate-middle-y opacity-25 fw-bold">
-            VIP
+        <IconContext.Provider value={{ size: "1rem" }}>
+          <div className="d-flex align-items-center gap-2">
+            <FaRegSmile />
+            <span>{friends} Friends</span>
           </div>
-        )}
+          <div className="d-flex align-items-center gap-2">
+            <FaCode />
+            <span>{projects} Project</span>
+          </div>
+          <div className="d-flex align-items-center gap-2">
+            <FaNewspaper />
+            <span>{articles} Articles</span>
+          </div>
+          {isVIP && (
+            <div className="vip position-absolute top-50 fs-1 translate-middle-y opacity-25 fw-bold">
+              VIP
+            </div>
+          )}
+        </IconContext.Provider>
       </div>
 
       <div className="join d-flex align-items-center justify-content-between">

@@ -13,8 +13,7 @@ type Props = {
 const File = ({ name, image, person, date, size }: Props) => {
   return (
     <Card className="file p-2 border-0">
-      <MdDownload className="text-black-50 fs-5" />
-
+      <MdDownload size={20} className="text-black-50" />
       <Card.Img src={image} className="m-auto" alt={name} />
 
       <Card.Body>
