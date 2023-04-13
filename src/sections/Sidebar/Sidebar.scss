@@ -2,6 +2,7 @@
 
 .side-bar {
   width: 250px;
+  min-height: 100vh;
   &.vh-100 {
     border-radius: 0 !important;
   }

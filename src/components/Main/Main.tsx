@@ -3,7 +3,7 @@ import Searchbar from "../../sections/Searchbar/Searchbar";
 
 const Main = () => {
   return (
-    <main className="flex-grow-1 d-flex flex-column vh-100 overflow-hidden position-relative">
+    <main className="flex-grow-1 d-flex flex-column overflow-hidden position-relative">
       <Searchbar />
       <PageContent />
     </main>

@@ -1,0 +1,13 @@
+@use "../../sass/variables" as *;
+
+.scroll-to-top {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-color: $orange-color;
+  transition: $main-transition;
+  animation: flash 0.8s linear;
+  &:hover {
+    background-color: $blue-alt-color;
+  }
+}

@@ -17,3 +17,12 @@
     transform: translateY(-5px);
   }
 }
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

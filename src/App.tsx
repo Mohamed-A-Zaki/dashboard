@@ -1,5 +1,6 @@
 import "./App.scss";
 import Main from "./components/Main/Main";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Sidebar from "./sections/Sidebar/Sidebar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App d-flex">
       <Sidebar />
       <Main />
+      <ScrollToTop />
     </div>
   );
 }
