@@ -1,7 +1,8 @@
-import Feature, { FeatureProps } from "../../components/Feature/Feature";
+import Feature from "../../components/Feature/Feature";
+import { PlanFeatureProps } from "../../types/Plan.types";
 
 type Props = {
-  features: FeatureProps[];
+  features: PlanFeatureProps[];
 };
 
 const FeaturesList = ({ features }: Props) => {
