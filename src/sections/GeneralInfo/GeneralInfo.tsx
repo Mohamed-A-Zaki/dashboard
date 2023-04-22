@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import "./GeneralInfo.scss";
 import { Form } from "react-bootstrap";
 
@@ -5,7 +7,6 @@ import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
-import { useState } from "react";
 
 const GeneralInfo = () => {
   const [isDisabled, setIsDisabled] = useState(true);

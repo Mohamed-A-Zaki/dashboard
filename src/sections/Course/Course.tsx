@@ -1,18 +1,13 @@
 import "./Course.scss";
+import { CourseProps } from "../../types/Course.types";
+
 import { Card, Image } from "react-bootstrap";
 import { FaUser, FaDollarSign } from "react-icons/fa";
 import MainButton from "../../components/MainButton/MainButton";
 
-type Props = {
-  name: string;
-  desc: string;
-  students: number;
-  price: number;
-  instructor: string;
-  image: string;
-};
+const Course = (props: CourseProps) => {
+  const { name, image, desc, students, price, instructor } = props;
 
-const Course = ({ name, image, desc, students, price, instructor }: Props) => {
   return (
     <Card className="course h-100">
       <Image

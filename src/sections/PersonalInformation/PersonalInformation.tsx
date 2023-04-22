@@ -1,7 +1,7 @@
+import { Col, Row } from "react-bootstrap";
 import Avatar from "../../components/Avatar/Avatar";
 import Section from "../../components/Section/Section";
 import Information from "../../components/Information/Information";
-import { Col, Row } from "react-bootstrap";
 
 const PersonalInformation = () => {
   return (

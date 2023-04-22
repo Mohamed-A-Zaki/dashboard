@@ -1,16 +1,10 @@
 import "./File.scss";
+import { FileProps } from "../../types/File.types";
+
 import { Card } from "react-bootstrap";
 import { MdDownload } from "react-icons/md";
 
-type Props = {
-  name: string;
-  image: string;
-  person: string;
-  date: string;
-  size: string;
-};
-
-const File = ({ name, image, person, date, size }: Props) => {
+const File = ({ name, image, person, date, size }: FileProps) => {
   return (
     <Card className="file p-2 border-0">
       <MdDownload size={20} className="text-black-50" />

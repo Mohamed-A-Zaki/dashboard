@@ -1,18 +1,10 @@
 import "./FriendStats.scss";
-import { IconContext } from "react-icons/lib";
+import { IconContext } from "react-icons";
 import { FaRegSmile, FaCode, FaNewspaper } from "react-icons/fa";
+import { FriendStatsProps } from "../../types/Friend.types";
 
-export type FriendStatsProps = {
-  stats: {
-    friends: number;
-    projects: number;
-    articles: number;
-  };
-  isVIP: boolean;
-};
-
-const FriendStats = ({ stats, isVIP }: FriendStatsProps) => {
-  const { friends, projects, articles } = stats;
+const FriendStats = (props: FriendStatsProps) => {
+  const { friends, articles, projects, isVIP } = props;
 
   return (
     <div className="friend-stats my-3 py-3 border-top border-bottom position-relative d-flex flex-column gap-2">

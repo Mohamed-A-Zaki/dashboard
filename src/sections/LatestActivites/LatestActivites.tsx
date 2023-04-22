@@ -1,16 +1,12 @@
-import React from "react";
-import "./LatestActivites.scss";
+import data from "../../data/data";
+
 import Section from "../../components/Section/Section";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import Activity from "../../components/Activity/Activity";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import SectionSubTitle from "../../components/SectionSubTitle/SectionSubTitle";
 
-type Props = {};
-
-import data from "../../data/data";
-import Activity from "../../components/Activity/Activity";
-
-const LatestActivites = (props: Props) => {
+const LatestActivites = () => {
   return (
     <Section className="latest-activites">
       <SectionHeading>

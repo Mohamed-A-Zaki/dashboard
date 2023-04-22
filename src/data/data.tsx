@@ -643,12 +643,12 @@ const data = {
       name: "Ahmed Nasser",
       job: "JavaScript Developer",
       join_date: "02/10/2021",
-      isVIP: true,
       image: friend_1,
       stats: {
         friends: 99,
         projects: 15,
         articles: 25,
+        isVIP: true,
       },
     },
     {
@@ -656,12 +656,12 @@ const data = {
       name: "Omar Fathy",
       job: "Cloud Developer",
       join_date: "02/08/2020",
-      isVIP: false,
       image: friend_2,
       stats: {
         friends: 30,
         projects: 11,
         articles: 12,
+        isVIP: false,
       },
     },
     {
@@ -669,12 +669,12 @@ const data = {
       name: "Omar Ahmed",
       job: "Mobile Developer",
       join_date: "02/06/2020",
-      isVIP: false,
       image: friend_3,
       stats: {
         friends: 80,
         projects: 20,
         articles: 18,
+        isVIP: false,
       },
     },
     {
@@ -682,12 +682,12 @@ const data = {
       name: "Shady Nabil",
       job: "Back-End Developer",
       join_date: "28/06/2020",
-      isVIP: false,
       image: friend_4,
       stats: {
         friends: 80,
         projects: 20,
         articles: 18,
+        isVIP: false,
       },
     },
     {
@@ -695,12 +695,12 @@ const data = {
       name: "Mohamed Ibrahim",
       job: "Algorithm Developer",
       join_date: "28/06/2020",
-      isVIP: false,
       image: friend_5,
       stats: {
         friends: 80,
         projects: 30,
         articles: 18,
+        isVIP: false,
       },
     },
     {
@@ -708,12 +708,12 @@ const data = {
       name: "Amr Hendawy",
       job: "Back-End Developer",
       join_date: "28/06/2020",
-      isVIP: true,
       image: friend_1,
       stats: {
         friends: 70,
         projects: 30,
         articles: 18,
+        isVIP: true,
       },
     },
     {
@@ -721,12 +721,12 @@ const data = {
       name: "Mahmoud Adel",
       job: "Cloud Developer",
       join_date: "02/08/2020",
-      isVIP: false,
       image: friend_2,
       stats: {
         friends: 30,
         projects: 11,
         articles: 12,
+        isVIP: false,
       },
     },
     {
@@ -734,12 +734,12 @@ const data = {
       name: "Ahmed Abuzaid",
       job: "Content Creator",
       join_date: "28/08/2020",
-      isVIP: true,
       image: friend_3,
       stats: {
         friends: 80,
         projects: 30,
         articles: 18,
+        isVIP: true,
       },
     },
     {
@@ -747,12 +747,12 @@ const data = {
       name: "Gareeb Elshiekh",
       job: "JavaScript Developer",
       join_date: "02/10/2020",
-      isVIP: false,
       image: friend_4,
       stats: {
         friends: 90,
         projects: 15,
         articles: 25,
+        isVIP: false,
       },
     },
     {
@@ -760,12 +760,12 @@ const data = {
       name: "Hamza",
       job: "Front-End Developer",
       join_date: "02/06/2020",
-      isVIP: false,
       image: friend_5,
       stats: {
         friends: 80,
         projects: 20,
         articles: 18,
+        isVIP: false,
       },
     },
   ],

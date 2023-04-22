@@ -1,18 +1,10 @@
 import "./Plan.scss";
+import { PlanProps } from "../../types/Plan.types";
 
 import Section from "../../components/Section/Section";
 import FeaturesList from "../FeaturesList/FeaturesList";
 import JoinPlan from "../../components/JoinPlan/JoinPlan";
 import PlanHeader from "../../components/PlanHeader/PlanHeader";
-
-import { FeatureProps } from "../../components/Feature/Feature";
-
-type PlanProps = {
-  name: string;
-  price: string;
-  features: FeatureProps[];
-  joined: boolean;
-};
 
 const Plan = ({ name, price, joined, features }: PlanProps) => {
   return (

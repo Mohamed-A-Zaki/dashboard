@@ -1,25 +1,17 @@
+import { FriendProps } from "../../types/Friend.types";
+
 import Section from "../../components/Section/Section";
 import FriendInfo from "../../components/FriendInfo/FriendInfo";
 import JoinFriends from "../../components/JoinFriends/JoinFriends";
+import FriendStats from "../../components/FriendStats/FriendStats";
 import FriendContact from "../../components/FriendContact/FriendContact";
 
-import FriendStats, {
-  FriendStatsProps,
-} from "../../components/FriendStats/FriendStats";
-
-type Props = {
-  name: string;
-  job: string;
-  join_date: string;
-  image: string;
-} & FriendStatsProps;
-
-const Friend = ({ name, image, job, isVIP, join_date, stats }: Props) => {
+const Friend = ({ name, image, job, join_date, stats }: FriendProps) => {
   return (
     <Section className="friend position-relative">
       <FriendContact />
       <FriendInfo name={name} job={job} image={image} />
-      <FriendStats stats={stats} isVIP={isVIP} />
+      <FriendStats {...stats} />
       <JoinFriends join_date={join_date} />
     </Section>
   );

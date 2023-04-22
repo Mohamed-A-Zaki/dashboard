@@ -1,21 +1,11 @@
 import "./Project.scss";
+import { ProjectProps } from "../../types/Project.types";
+
 import { Badge, ProgressBar } from "react-bootstrap";
 import Section from "../../components/Section/Section";
 import ProjectImage from "../../components/ProjectImage/ProjectImage";
 
-type Props = {
-  name: string;
-  finish_date: string;
-  client: string;
-  price: string;
-  status: string;
-  progress: number;
-  description: string;
-  team: string[];
-  tags: string[];
-};
-
-const Project = (props: Props) => {
+const Project = (props: ProjectProps) => {
   const { name, description, finish_date, team, tags, progress, price } = props;
 
   return (

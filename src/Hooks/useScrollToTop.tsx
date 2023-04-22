@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 const useScrollToTop = () => {
   useEffect(() => {
-    document.querySelector(".page")?.scrollTo({
+    window.scrollTo({
       top: 0,
       behavior: "auto",
     });

@@ -1,7 +1,8 @@
 import "./App.scss";
 import Main from "./components/Main/Main";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import { ToastContainer } from "react-toastify";
 import Sidebar from "./sections/Sidebar/Sidebar";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Sidebar />
       <Main />
       <ScrollToTop />
+      <ToastContainer />
     </div>
   );
 }

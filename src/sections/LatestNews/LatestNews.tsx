@@ -1,9 +1,9 @@
+import data from "../../data/data";
+
 import News from "../../components/News/News";
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
-
-import data from "../../data/data";
 
 const LatestNews = () => {
   return (

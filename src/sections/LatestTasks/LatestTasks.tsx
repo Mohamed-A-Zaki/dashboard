@@ -1,9 +1,9 @@
+import data from "../../data/data";
+
 import Task from "../../components/Task/Task";
 import Section from "../../components/Section/Section";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
-
-import data from "../../data/data";
 
 const LatestTasks = () => {
   return (

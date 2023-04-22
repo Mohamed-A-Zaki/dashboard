@@ -3,14 +3,9 @@ import { BiCheck } from "react-icons/bi";
 import { IconContext } from "react-icons";
 import { VscClose } from "react-icons/vsc";
 import { IoMdInformationCircle } from "react-icons/io";
+import { PlanFeatureProps } from "../../types/Plan.types";
 
-export type FeatureProps = {
-  id: number;
-  name: string;
-  isActive: boolean;
-};
-
-const Feature = ({ name, isActive }: FeatureProps) => {
+const Feature = ({ name, isActive }: PlanFeatureProps) => {
   return (
     <div className="feature d-flex align-items-center justify-content-between py-3 gap-2 border-bottom">
       <IconContext.Provider
